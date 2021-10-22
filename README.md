@@ -1,2 +1,2 @@
-# P4TY1977.github.io
-maqueta UAM-L
+# maqueta
+maqueta de la página web de la UAM-L
