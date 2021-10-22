@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Consejo Académico (maquetación)</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">	
+	
+    
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
+    
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/settings.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="#" rel="shortcut icon">
+	<!--Estilos para datos de director y contactos-->
+	<style type="text/css">
+	
+		.professor .media-body span, .professor .media-body span i, .testimonial-item .media-body {
+			font-size:14px;
+			text-transform: none;
+		}
+		.professor .media-body a{font-size:24px;}
+			.imagen-encabezado{ border-radius: 35%;
+			margin-right: 50px;}
+			.event-more-detail p a{color: #253b80;}
+			.single-course-detail .content-content .event-more-detail {   
+				border-bottom: none;
+			}
+			.related-course .cr-content .cr-title span, .titular {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 17px;
+				line-height: 1.2em;
+				color: #253b80;
+			}
+			 .related-course .cr-content span
+			{
+				text-transform: none;
+			}		
+	</style>
+	<!-- Estilos para carrusel -->
+	<style type="text/css">
+		.page-title.parallax4 {
+			padding: 25px 0 ;
+		}
+		h6{font-weight: bold;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+	<script type="text/javascript">
+		function addRemoveClass(elemento){
+			
+			if(elemento.lastElementChild.className.indexOf("show_sub_menu") == -1)
+			    elemento.lastElementChild.className+=" show_sub_menu";
+			else
+				elemento.lastElementChild.className="sub-menu"
+		}
+	</script>
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="header-sticky">
+    
+    <div class="boxed">       
+        <div class="header-inner-pages">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+							<nav class="navbar navbar-expand-lg navbar-light top">
+								<div class="container-fluid">		
+									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									  <span class="navbar-toggler-icon"></span>
+									</button>
+									<div class="collapse navbar-collapse" id="navbarSupportedContent">
+									  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+										<li class="nav-item">
+										  <a class="nav-link" href="https://admision.uam.mx/index.html">Admisión</a>
+										</li>
+										<li class="nav-item dropdown">
+										  <a class="nav-link" href="oferta_academica.html">Oferta Académica</a>
+											
+										</li>
+										<li class="nav-item dropdown">
+										  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="enlaceAcademico" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Enlace Académico
+										  </a>
+										  <ul class="dropdown-menu" aria-labelledby="enlaceAcademico">
+											<li><a class="dropdown-item" href="coordinacion_enlace_academico.html#movilidad-tab">Movilidad</a></li>
+											<li><a class="dropdown-item" href="coordinacion_enlace_academico.html#becas-tab">Becas</a></li>				
+											<li><a class="dropdown-item" href="coordinacion_enlace_academico.html#bt-tab">Bolsa de Trabajo</a></li>
+											<li><a class="dropdown-item" href="coordinacion_vinculacion.html">Vinculación</a></li>
+										  </ul>				
+										</li>
+										<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:void(0)" id="investigacion" role="button" data-bs-toggle="dropdown" aria-expanded="false">Investigación</a>
+											<ul class="dropdown-menu" aria-labelledby="investigacion">                                            
+												<li><a class="dropdown-item" href="directorio_investigaciones_CBI.html">Ciencias Básicas e Ingeniería</a></li>
+												<li><a class="dropdown-item" href="directorio_investigaciones_CBI_2.html">Ciencias Biológicas y de la Salud</a></li>
+												<li><a class="dropdown-item" href="directorio_investigaciones_CBI.html">Ciencias Sociales y Humanidades</a></li>
+											</ul><!-- /.submenu -->  
+										</li>
+										<li class="nav-item">
+										  <a class="nav-link" href="casos_exito.html">Casos de Éxito</a>
+										</li>
+										<li class="nav-item">
+										  <a class="nav-link" href="contacto.html">Contacto</a>
+										</li>
+										<li class="nav-item">
+										  <a class="nav-link" href="directorio.html">Directorio</a>
+										</li>
+									  </ul>     
+								</div>
+							  </div>
+							</nav>
+                        </div><!-- col-md-12 -->
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- Top -->    
+        </div><!-- header-inner-pages -->
+
+        <!-- Header -->
+        <header id="header" class="header v2">
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="header-wrap clearfix">
+                        <div id="logo" class="logo">
+                            <a href="index.html" rel="home">
+                                <img src="images/logo.png" alt="image">
+                            </a>
+
+                            <div class="navbar-right topnav-sidebar" style="padding-top: 20px;">
+                                <ul class="textwidget">									
+                                    <li>
+                                        <a href="https://es-la.facebook.com/UAMLerma/" title="facebook"><i class="fa fa-facebook"  style="color: purple; font-size: 2em;"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UCv8QLeqA64cb0Ydp86CPjDw" title="youtube"><i class="fa fa-youtube" style="color: purple; font-size: 2em;"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/UAM_Lerma" title="twitter"><i class="fa fa-twitter" style="color: purple; font-size: 2em;"></i></a>
+                                    </li>
+									<li>
+                                        <a href="https://uamradio.uam.mx/" title="UAM Radio"><i class="fa fa-headphones" style="color: purple; font-size: 2em;"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                     </div><!-- /.logo -->
+                 </div><!-- /.header-wrap -->
+             </div><!-- /.container-->
+            <!--/div--><!-- /.header-wrap-->
+        </header><!-- /.header -->
+ 		<div class="page-title full-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">                    
+                        <div class="page-title-heading">
+                            <h2 class="title">Consejo Académico</h2>
+                        </div>                                    
+                    </div><!-- /.col-md-12 -->  
+                </div><!-- /.row -->  
+            </div><!-- /.container -->                      
+        </div><!-- /page-title -->
+		
+        <div class="top header"  style="background: #212529;">
+            <div class="container"> 
+				<div class="row">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark innerNav v1 v2" id="innerNav">
+					<div class="container-fluid">	
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuInterno" aria-controls="menuInterno" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="menuInterno">
+						  <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+
+							<li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" id="alumnos"  role="button" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:void(0)"><i class="fa fa-book"></i>Alumnos</a>
+								<ul class="dropdown-menu submenu" aria-labelledby="alumnos">
+								<li><a class="dropdown-item" href="directorio_servicios.html">Directorio de Servicios</a></li>
+								<li><a class="dropdown-item" href="coordinacion_servicios_informacion_comunicaciones.html#biblio-tab">Biblioteca</a></li>
+								<li><a class="dropdown-item" href="http://xogi.ler.uam.mx:10080/">Repositorio Digital</a></li>
+								<li><a class="dropdown-item" href="http://campus-virtual.ler.uam.mx:18080/CampusVirtual/CampusVirtual/buzonUAML_menu.action">Buzón UAM</a></li>
+								<li><a class="dropdown-item" href="coordinacion_enlace_academico.html">Coordinación de Enlace Académico</a></li>
+								<li><a class="dropdown-item" href="coordinacion_sistemas_escolares.html">Coordinación de Sistemas Escolares</a></li>
+								<li><a class="dropdown-item" href="coordinacion_campus_virtual.html">Coordinación de Campus Virtual</a></li>
+								<li><a class="dropdown-item" href="coordinacion_bienestar_universitario_genero.html">Coordinación de Bienestar Universitario y Género</a></li>
+								<li><a class="dropdown-item" href="coordinacion_enlace_academico.html#ad-tab">Sección de Actividades Deportivas</a></li>
+								<li><a class="dropdown-item" href="http://www.ler.uam.mx/es/UAMLerma/ccvVideoPIVU">PIVU</a></li>
+							  </ul>
+							</li>
+							<li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="academicos" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-graduation-cap"></i>
+								Académicos
+							  </a>
+							  <ul class="dropdown-menu" aria-labelledby="academicos">						
+								<li><a class="dropdown-item" href="directorio_servicios.html">Directorio de Servicios</a></li>
+								<li><a class="dropdown-item" href="coordinacion_servicios_informacion_comunicaciones.html#biblio-tab">Biblioteca</a></li>
+								<li><a class="dropdown-item" href="http://xogi.ler.uam.mx:10080/">Repositorio Digital</a></li>
+								<li><a class="dropdown-item" href="http://campus-virtual.ler.uam.mx:18080/CampusVirtual/CampusVirtual/buzonUAML_menu.action">Buzón UAM</a></li>
+								<li><a class="dropdown-item" href="consejo_academico.html">Consejo Académico</a></li>
+								<li><a class="dropdown-item" href="consejoCBI.html">Consejo Divisional CBI</a></li>
+								<li><a class="dropdown-item" href="consejoCBI.html">Consejo Divisional CBS</a></li>
+								<li><a class="dropdown-item" href="consejoCBI.html">Consejo Divisional CSH</a></li>
+								<li><a class="dropdown-item" href="coordinacion_campus_virtual.html">Coordinación de Campus Virtual</a></li>
+								<li><a class="dropdown-item" href="coordinacion_servicios_informacion_comunicaciones.html">Coordinación de Servicios de Información y Comunicaciones</a></li>
+								<li><a class="dropdown-item" href="coordinacion_vinculacion.html">Coordinación de Vinculación</a></li>
+							  </ul>				
+							</li>
+							<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:void(0)" id="administrativos" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-gear"></i>Administrativos</a>
+								<ul class="dropdown-menu" aria-labelledby="administrativos">  
+									<li><a class="dropdown-item" href="directorio_servicios.html">Directorio de Servicios</a></li>
+									<li><a class="dropdown-item" href="http://campus-virtual.ler.uam.mx:18080/CampusVirtual/CampusVirtual/buzonUAML_menu.action">Buzón UAM</a></li>
+									<li><a class="dropdown-item" href="consejo_academico.html">Consejo Académico</a></li>
+									<li><a class="dropdown-item" href="consejoCBI.html">Consejo Divisional CBI</a></li>
+									<li><a class="dropdown-item" href="consejoCBI.html">Consejo Divisional CBS</a></li>
+									<li><a class="dropdown-item" href="consejoCBI.html">Consejo Divisional CSH</a></li>							
+									<li><a class="dropdown-item" href="coordinacion_campus_virtual.html">Coordinación de Campus Virtual</a></li>
+									<li><a class="dropdown-item" href="coordinacion_servicios_informacion_comunicaciones.html">Coordinación de Servicios de Información y Comunicaciones</a></li>
+									<li><a class="dropdown-item" href="coordinacion_vinculacion.html">Coordinación de Vinculación</a></li>
+								</ul><!-- /.submenu -->  
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="directorio.html">Directorio</a>
+							</li>
+							 <li>
+								  <form class="d-flex" style="padding-left: 50px;">
+									<input class="form-control me-2" type="search" placeholder="Palabras a buscar" aria-label="Buscar">
+									<button class="fa fa-search" type="submit"></button>
+								  </form>                          
+
+							</li>  
+						  </ul>     
+					</div>
+					</div>
+					
+			</nav>
+				</div>
+			</div>
+			</div>
+		<!--/header-->
+
+       <section class="main-content course-single">
+            <div class="container">
+                <div class="content-course">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <article class="post-course">
+                                <div class="row">                                  
+
+                                    <div class="col-md-12">
+                                        <div class="content-pad single-course-detail">
+                                            <div class="course-detail" style="border-top: 0px;"> 
+                                                <div class="content-content" style="border-top: 0px;">												
+        	    			
+                                                    <div class="content-dropcap v1">
+														<p>La Oficina Técnica del Consejo Académico: Tendrá a su cargo apoyar al Rector y al Secretario de Unidad en el funcionamiento y operación del Consejo Académico y sus comisiones, así como controlar y dar seguimiento a los acuerdos de este órgano colegiado.<br/><br/>El Consejo Académico es el máximo órgano colegiado de la Unidad, integrado por el Rector, quien funge como Presidente del mismo, los Directores de División, los Jefes de Departamento, los representantes del personal académico y de los alumnos por cada Departamento, así como los representantes del personal administrativo.
+														</p>
+														<ul>
+															<li><i class="fa fa-check"></i> Dictaminar y armonizar los proyectos sobre planes y programas de estudio que le propongan los Consejos Divisionales, y en su caso, someterlos a la aprobación del Colegio Académico.</li>
+															<li><i class="fa fa-check"></i> Designar a los Directores de División de las ternas que le propongan los respectivos Rectores.</li>
+															<li><i class="fa fa-check"></i> Someter al Patronato, por conducto del Rector General, el proyecto de presupuesto anual de ingresos y egresos de la unidad universitaria.</li>
+															<li><i class="fa fa-check"></i> Proponer ante el órgano correspondiente las medidas que tiendan al mejoramiento de las actividades de la unidad universitaria.</li>
+															<li><i class="fa fa-check"></i> Emitir instructivos respecto del funcionamiento interno y operativo para regular el uso de los servicios e instalaciones, tales como laboratorios, talleres, clínicas, instalaciones deportivas, prácticas de campo, transportes , equipo y maquinaria, estacionamientos, cafeterías, servicios bibliotecarios, entre otros.</li>
+															<li><i class="fa fa-check"></i> Establecer las particularidades de la organización académica de la Unidad aprobada por el Colegio Académico y acordes con la Ley Orgánica y el Reglamento Orgánico.</li>
+															<li><i class="fa fa-check"></i> Emitir y difundir las convocatorias para iniciar el proceso de designación de los Rectores de Unidad.</li>
+															<li><i class="fa fa-check"></i> Aprobar la creación o supresión de las áreas de los Departamentos, a propuesta del Consejo Divisional correspondiente.</li>
+															<li><i class="fa fa-check"></i> Conocer y emitir opinión sobre la propuesta de creación de nuevos Departamentos en la Unidad.</li>
+															<li><i class="fa fa-check"></i> Aprobar la creación, promoción, apoyo, modificación o supresión de líneas editoriales de la Unidad.</li>													
+															
+														</ul>
+														<p align="center"><img src="images/about/index1/fotos/ca3.JPG"></p>
+                                                    </div>
+
+                                                    <div class="event-more-detail">
+                                                        <h4>Secretaría del Consejo Académico y la Oficina Técnica</h4>
+                                                        <p>Conforme al Reglamento Orgánico, corresponde al Secretario de Unidad fungir como Secretario del Consejo Académico, al cual le competen, entre otras responsabilidades, las siguientes:</p>
+														<ul>
+															<li><i class="fa fa-check"></i> Administrar la Oficina Técnica del Consejo Académico.</li>
+															<li><i class="fa fa-check"></i> Certificar y publicar las informaciones del órgano colegiado.</li>
+															<li><i class="fa fa-check"></i> Notificar las convocatorias y hacer llegar los documentos o archivos relativos al desahogo del orden del día.</li>
+															<li><i class="fa fa-check"></i> Pasar lista de asistencia, certificar el quórum y realizar el cómputo de votos emitidos durante las sesiones del Consejo.</li>
+															<li><i class="fa fa-check"></i> Publicar oportunamente los acuerdos adoptados en cada sesión.</li>
+															<li><i class="fa fa-check"></i> Levantar las actas correspondientes a cada sesión.</li>
+														</ul>
+														<p>Por su parte, la Oficina Técnica del  Consejo Académico de la Unidad Lerma constituye el apoyo operativo para que la Secretaría del Consejo Académico lleve a cabo las tareas que le corresponden, por lo que su principal función y compromiso institucional consiste en coadyuvar al desarrollo de las funciones del órgano colegiado con eficiencia y calidad, facilitando logística y administrativamente la coordinación de las Sesiones del Consejo y las reuniones de sus Comisiones; así como difundir la información necesaria hacia los propios integrantes del Consejo Académico y de la comunidad universitaria, cuando corresponde, de forma adecuada y oportuna.<br/><br/>Entre las diversas actividades operativas que realiza la Oficina Técnica de Consejo Académico se encuentran las siguientes:</p>
+														<ul>
+															<li><i class="fa fa-check"></i> Programar y elaborar el orden del día de las Sesiones de Consejo Académico, preparar y difundir  la información complementaria para cada sesión, así como gestionar la disposición de los espacios y recursos necesarios.</li>
+															<li><i class="fa fa-check"></i> Elaborar las actas de las Sesiones del Consejo Académico, de conformidad con la Legislación Universitaria.</li>
+															<li><i class="fa fa-check"></i> Programar y convocar a las reuniones de las Comisiones del Consejo Académico, asistir a estas, distribuir información, así como elaborar las minutas respectivas, proyectos de dictamen y documentos de trabajo en general.</li>
+															<li><i class="fa fa-check"></i> Elaborar convocatorias, programar las reuniones del Comité Electoral, elaborar cédulas de votación y coadyuvar en la organización y gestión de recursos para realizar las auscultaciones cuantitativas y cualitativas.</li>
+															<li><i class="fa fa-check"></i> Proporcionar información, elaborar oficios y constancias para firma del Secretario.</li>
+															<li><i class="fa fa-check"></i> Apoyar a la Rectoría de Unidad en los procesos de renovación de órganos personales, mediante la elaboración de convocatorias, registro de aspirantes, recepción de documentos y organización de auscultaciones cuantitativas y cualitativas.</li>
+															<li><i class="fa fa-check"></i> Atender solicitudes de información del Colegio Académico y otras instancias de la UAM.</li>
+															<li><i class="fa fa-check"></i> Como dato histórico se destaca que el Consejo Académico de la Unidad Lerma celebró su primer Sesión el 20 de julio de 2012.</li>
+														</ul>
+														
+                                                    </div>
+													<div class="event-more-detail">
+                                                        <h4>Comisiones del Consejo Académico</h4><br/>
+														<p>A fin de atender los asuntos prioritarios de la Unidad e impulsar el trabajo al interior del Consejo Académico, éste puede integrar Comisiones de entre sus miembros, así como nombrar a los asesores técnicos necesarios para el tratamiento de un asunto específico. El órgano colegiado debe tratar que en las Comisiones se encuentren representados los sectores que lo integran.</p>
+														<p>Asimismo, el Secretario del Consejo Académico funge como coordinador de las Comisiones, las cuales rendirán su dictamen dentro del plazo otorgado por el órgano colegiado.</p>
+														<p>Por mandato expreso de la Legislación Universitaria, en la primera sesión posterior a su instalación, el Consejo Académico debe integrar una Comisión de Planes y Programas de Estudio.  </p>
+														
+													</div>
+                                                    <div class="related-course">
+                                                        <h3>Contacto</h3>
+                                                        <div class="cr-content">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-sm-6 related-item">
+                                                                   
+                                                                    <div class="cr-title ">
+                                                                        <span class="related-cr-title main-color-1-hover">Lic. Blanca Z. Chimal de la Cruz</span>
+                                                                    </div>
+                                                                    <div class="cr-start small-text v1">													 
+																		<span style="font-weight: bold;">Jefa de la Oficina</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 (728) 282 7002 Ext. 1019</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;otca@correo.ler.uam.mx</span>
+																	</div>
+                                                                    <div class="clear"></div>
+                                                                </div>
+                                                            </div>
+                                                       </div>
+                                                    </div>                                 
+                                                </div><!--/content-content-->
+                                            </div><!--/course-detail-->
+                                        </div><!--/single-content-detail-->         
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="sidebar">
+                                <div class="widget widget-nav-menu">
+                                    <div class=" widget-inner">
+                                        <h2 class="widget-title maincolor2">Consejo Académico</h2>
+                                        <div class="menu-main-navigation-container">											
+                                            <ul id="menu-main-navigation-1" class="menu">
+                                                <li class="menu-item">
+                                                    <a href="#">Sesiones del Consejo Académico</a> 
+													
+                                                </li>
+												
+												<li class="menu-item">
+													<a href="#">Integrantes del Consejo Académico 2021-2023</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">Comité Electoral 2021-2023</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">Comisiones del Consejo Académico 2021-2023</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">Representantes de la Unidad Lerma ante el Colegio Académico 2021-2023</a>	
+												</li>
+												<li class="menu-item">
+													<a href="#">Convocatorias</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">Documentos Aprobados</a>
+												</li>
+											</ul>											
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget widget-courses">
+                                    <h2 class="widget-title">Enlaces</h2>
+                                    <ul class="recent-posts clearfix">
+                                        <li>                                            
+                                            <div class="text">
+                                                <a href="http://envivo.ler.uam.mx/" target="_blank">Transmisión en vivo</a>                                              
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="text">
+                                                <a href="http://www.uam.mx/legislacion/index.html" target="_blank">Legislación Universitaria</a>
+                                            </div>
+                                        </li>
+                                    </ul><!-- /popular-news clearfix -->
+                                </div><!-- /widget-posts -->
+
+                               
+                            </div><!-- sidebar -->
+                        </div><!-- /col-md-3 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+	
+		
+
+        <footer class="footer full-color">
+            <section id="bottom">
+                <div class="section-inner">
+                    <div class="container">
+                        <div class="row normal-sidebar">
+							
+							
+						<div class="widget widget-text">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class=" widget-inner">
+                                            <div class="textwidget">
+                                                <div id="un-icon-box-1" class="media un-icon-box" data-delay="0">
+                                                    <div class="pull-left">
+                                                        <div class="thumb item-thumbnail">
+															<a href="https://www.uam.mx/">																
+																	<img src="images/icon/UAML.png"  class="iconoUam" style="filter: grayscale(100);">
+																<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																<div class="thumbnail-hoverlay-cross"></div>
+															</a>
+														</div>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">Rectoria General</h4>
+                                                        <p>www.uam.mx</p>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-md-2">
+                                        <div class=" widget-inner">
+                                            <div class="textwidget">
+                                                <div id="un-icon-box-2" class="media un-icon-box  " data-delay="0">
+                                                    <div class="pull-left">
+														 <div class="thumb item-thumbnail">
+															<a href="https://www.azc.uam.mx/">																
+																	<img src="images/icon/UAMA.png" class="iconoUam">
+																<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																<div class="thumbnail-hoverlay-cross"></div>
+															</a>
+														</div>
+                                                        
+                                                    </div>
+                                                    <div class="media-body ">
+                                                        <h4 class="media-heading">UAM-A</h4>
+                                                        <p>www.azc.uam.mx</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-md-2">
+                                        <div class=" widget-inner">
+                                            <div class="textwidget">
+                                                <div id="un-icon-box-3" class="media un-icon-box  " data-delay="0">
+                                                    <div class="pull-left">
+                                                        <div class="thumb item-thumbnail">
+															<a href="http://www.cua.uam.mx/">																
+																	<img src="images/icon/UAMC.png" class="iconoUam">
+																<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																<div class="thumbnail-hoverlay-cross"></div>
+															</a>
+														</div>
+                                                    </div>
+                                                    <div class="media-body ">
+                                                        <h4 class="media-heading">UAM-C</h4>
+                                                        <p>www.cua.uam.mx</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-md-2">
+                                        <div class=" widget-inner">
+                                            <div class="textwidget">
+                                                <div id="un-icon-box-4" class="media un-icon-box  " data-delay="0">
+                                                    <div class="pull-left">
+                                                        <div class="thumb item-thumbnail">
+															<a href="http://www.izt.uam.mx/">																
+																	<img src="images/icon/UAMI.png" class="iconoUam">
+																<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																<div class="thumbnail-hoverlay-cross"></div>
+															</a>
+														</div>
+                                                    </div>
+                                                    <div class="media-body ">
+                                                        <h4 class="media-heading">UAM-I</h4>
+                                                        <p>www.izt.uam.mx</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									
+									<div class=" col-md-2">
+                                        <div class=" widget-inner">
+                                            <div class="textwidget">
+                                                <div id="un-icon-box-5" class="media un-icon-box  " data-delay="0">
+                                                    <div class="pull-left">
+                                                        <div class="thumb item-thumbnail">
+															<a href="http://www.ler.uam.mx/">																
+																	<img src="images/icon/UAML.png" class="iconoUam">
+																<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																<div class="thumbnail-hoverlay-cross"></div>
+															</a>
+														</div>
+                                                    </div>
+                                                    <div class="media-body ">
+                                                        <h4 class="media-heading">UAM-L</h4>
+                                                        <p>www.ler.uam.mx</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									
+									<div class=" col-md-2">
+                                        <div class=" widget-inner">
+                                            <div class="textwidget">
+                                                <div id="un-icon-box-6" class="media un-icon-box  " data-delay="0">
+                                                    <div class="pull-left">
+                                                        <div class="thumb item-thumbnail">
+															<a href="https://www.xoc.uam.mx/">																
+																	<img src="images/icon/UAMX.png" class="iconoUam">
+																<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																<div class="thumbnail-hoverlay-cross"></div>
+															</a>
+														</div>
+                                                    </div>
+                                                    <div class="media-body ">
+                                                        <h4 class="media-heading">UAM-X</h4>
+                                                        <p>www.xoc.uam.mx</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="bottom-nav">
+                <div class="container">
+                    <div class="link-center">
+                        <div class="line-under"></div>
+                        <a class="flat-button go-top-v1 style1" href="#top">Inicio</a>
+                    </div>
+                    <div class="row footer-content">
+                        <div class="copyright col-md-6">
+                            Universidad Autónoma Metropolitana, Unidad Lerma<br/>
+							Av. de las Garzas No. 10, Col. El Panteón, Municipio Lerma de Villada, Estado de México, C.P. 52005<br/>
+							Teléfono: 01 728 282 7002 
+                        </div>
+                          <nav class="col-md-6 footer-social">
+                            <ul class="social-list">
+                                <li>
+                                    <a href="https://www.facebook.com/UAMLerma?fref=ts" class="btn btn-default social-icon">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/UAM_Lerma" class="btn btn-default social-icon">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>    
+                                    <a href="https://www.linkedin.com/" class="btn btn-default social-icon">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCv8QLeqA64cb0Ydp86CPjDw?app=desktop" class="btn btn-default social-icon">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!--/row-->
+                </div><!--/container-->
+            </div>
+        </footer>
+
+        <!-- Javascript -->
+       
+        <script type="text/javascript" src="javascript/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+        
+        <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+        <script type="text/javascript" src="javascript/parallax.js"></script>
+        <script type="text/javascript" src="javascript/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="javascript/jquery.tweet.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
+        <script type="text/javascript" src="javascript/jquery-validate.js"></script> 
+        <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+        
+        <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+        <script type="text/javascript" src="javascript/main.js"></script>
+       <script type="text/javascript">
+		   document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  // close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {	
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+// DOMContentLoaded  end
+       </script>
+
+    </div>
+</body>
+</html>
