@@ -49,8 +49,7 @@ ul .dropdown-menu li:hover > a {
     text-transform: uppercase;
     padding: 0 30px;
     outline: none;
-    font-weight: 700;
-    border-right: 1px solid #444;
+    font-weight: 700;   
 }
 
 .header.upscrolled {
