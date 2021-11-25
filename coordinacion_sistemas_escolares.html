@@ -211,6 +211,7 @@
 									</ul>    
 								</div> 
 						</div>
+							<a href="http://campus-virtual.ler.uam.mx:18080/CampusVirtual/login_formaLogin.action"><img src="icon/BotonP2.png" title="Buzón UAM"  style="height: 70px; position: absolute; top: -24px; right: 10px;"></a>
 						</div>
 
 					</nav>
@@ -292,7 +293,7 @@
                                 </div><!-- /.toggle -->
 
                                 <div class="flat-toggle">
-                                    <div class="toggle-title">EVALUACION DOCENTE</div>
+                                    <div class="toggle-title" id="evaluacionDocente">EVALUACION DOCENTE</div>
                                     <div class="toggle-content">
                                         <div class="info"> 
 											<ul class="list disc">
@@ -997,6 +998,13 @@
         
         <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
         <script type="text/javascript" src="javascript/main.js"></script>
+	    <script type="text/javascript">
+			var tab=location.hash;
+			
+			if(tab!=null&&tab!=undefined&&tab!=""){
+			   document.getElementById(tab.substring(1,tab.length)).className+=" active";
+			}
+	    </script>
     </div>
 </body>
 </html>
