@@ -81,6 +81,27 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/tabs.css">
+	<style type="text/css">
+		section {
+    padding: 60px 0;
+}
+
+
+
+	button	{
+	height: auto; /* para que se ajusten al texto las pestañas del tab*/
+  
+}
+
+
+#tabs .nav-tabs .nav-link {   
+    font-size: 18px;
+	margin: 20px;
+}
+		
+
+	</style>
 
 </head>
 
@@ -245,15 +266,15 @@
 							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDivision" aria-controls="menuDivision" aria-expanded="false" aria-label="Toggle navigation">
 							  <span class="navbar-toggler-icon"></span>
 							</button>
-							<a href="http://campus-virtual.ler.uam.mx:18080/CampusVirtual/login_formaLogin.action" class="d-none d-lg-block"><img src="icon/BotonP2.png" title="Buzón UAM"  style="height: 70px; position: absolute; top: -24px; left: -20px; z-index: 9999;"></a>
+							<a href="http://campus-virtual.ler.uam.mx:18080/CampusVirtual/login_formaLogin.action" class="d-none d-lg-block"><img src="icon/BotonP2.png" title="Buzón UAM"  style="height: 70px; position: absolute; top: -24px; left: -20px;"></a>
 							<div class="collapse navbar-collapse" id="menuDivision">
 								  <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
 									<li class="nav-item dropdown">
 									  <a class="nav-link dropdown-toggle" id="DCBI"  role="button" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:void(0)">DCBI</a>
 										<ul class="dropdown-menu submenu" aria-labelledby="DCBI">
 											<li><a class="dropdown-item" href="divisionCBI.html">Información General <i class="fa fa-check"></i></a></li>
-											<li><a class="dropdown-item" href="#">Transparencia</a></li>											
-											<li><a class="dropdown-item" href="#" title="Tablero">Convocatorias y Dictámenes</a></li>	
+											<li><a class="dropdown-item" href="transparencia.html">Transparencia <i class="fa fa-check"></i></a></li>											
+											<li><a class="dropdown-item" href="convocatorias_dictamenes.html" title="Tablero">Convocatorias y Dictámenes <i class="fa fa-check"></i></a></li>	
 											
 									  </ul>
 									</li>
@@ -266,6 +287,10 @@
 											<li><a class="dropdown-item" href="#">Ingeniería en Recursos Hídricos</a></li>										
 											<li><a class="dropdown-item" href="lic_ict.html">Ingeniería en Computación y Telecomunicaciones <i class="fa fa-check"></i></a></li>
 											<li><a class="dropdown-item" href="#">Ingeniería en Sistemas Mecatrónicos Industriales</a></li>
+											<li><hr class="dropdown-divider"></li>
+											<li class="nav-item dropdown disabled">Postgrado</li>
+											<li><hr class="dropdown-divider"></li>
+											<li class="nav-item dropdown disabled">Educación en línea</li>
 									  </ul>
 									</li>
 									<li class="nav-item dropdown">
@@ -280,24 +305,14 @@
 									  </ul>				
 									</li>
 									  <li class="nav-item dropdown">
-									  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="investigacion" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="investigacion" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="sólo CBI quiere su menú de investigación en este lugar">
 										Investigación
 									  </a>
-									  <ul class="dropdown-menu" aria-labelledby="investigacion">										  
-										<li style="text-align: center"><a class="dropdown-item fw-bold" href="#">Departamento de Procesos Productivos</a></li>
-										  <li><a class="dropdown-item" href="#">Áreas de Investigación</a></li>
-										  <li><a class="dropdown-item" href="#">Cuerpos Académicos</a></li>
-										   <li><a class="dropdown-item" href="#">Proyectos de Investigación</a></li>										  
-										  <li><hr class="dropdown-divider"></li>
-										<li style="text-align: center"><a class="dropdown-item fw-bold" href="#">Departamento de Recursos de la Tierra</a></li>
-										   <li><a class="dropdown-item" href="#">Áreas de Investigación</a></li>
-										  <li><a class="dropdown-item" href="#">Cuerpos Académicos</a></li>
-										   <li><a class="dropdown-item" href="#">Proyectos de Investigación</a></li>
-										   <li><hr class="dropdown-divider"></li>
-										<li style="text-align: center"><a class="dropdown-item fw-bold" href="#">Departamento de Sistemas de Información y Comunicaciones</a></li>
-										   <li><a class="dropdown-item" href="#">Áreas de Investigación</a></li>
-										   <li><a class="dropdown-item" href="#">Cuerpos Académicos</a></li>
-										   <li><a class="dropdown-item" href="#">Proyectos de Investigación</a></li>
+									  <ul class="dropdown-menu" aria-labelledby="investigacion">						
+										<li><a class="dropdown-item" href="#">Departamento de Procesos Productivos</a></li>
+										<li><a class="dropdown-item" href="#">Departamento de Recursos de la Tierra</a></li>
+										<li><a class="dropdown-item" href="#">Departamento de Sistemas de Información y Comunicaciones</a></li>
+										
 									  </ul>				
 									</li>
 									  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:void(0)" id="consejoDivisional" role="button" data-bs-toggle="dropdown" aria-expanded="false">Consejo Divisional</a>
@@ -319,7 +334,9 @@
 								  </ul>     
 							</div>
 <!-- fin menu de la división-->							
-							<a href="http://campus-virtual.ler.uam.mx:18080/CampusVirtual/login_formaLogin.action" class="d-lg-none"><img src="icon/BotonP2.png" title="Buzón UAM"  style="height: 70px; position: absolute; top: -24px; right: 0px; z-index: 9999;"></a>
+							
+							
+							<a href="http://campus-virtual.ler.uam.mx:18080/CampusVirtual/login_formaLogin.action" class="d-lg-none"><img src="icon/BotonP2.png" title="Buzón UAM"  style="height: 70px; position: absolute; top: -24px; right: 0px;"></a>
 						</div>
 
 					</nav>
@@ -331,40 +348,43 @@
        <section class="main-content course-single">
             <div class="container">
                 <div class="content-course">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <article class="post-course">
-                                <div class="row">                                  
+					<section id="tabs">
+						<div class="container">
+                    		<div class="row">
+								<div class="col-12">
+									<nav>
+										<ul class="nav nav-tabs" id="myTab" role="tablist">
+										  <li class="nav-item" role="presentation">
+											<button class="nav-item nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">Información general</button>
+										  </li>
+										  <li class="nav-item" role="presentation">
+											<button class="nav-link" id="investigaciones-tab" data-bs-toggle="tab" data-bs-target="#investigaciones" type="button" role="tab" aria-controls="investigaciones" aria-selected="false" title="CBI lo prefiere en el menú oscuro">Investigación (opcional) </button>
+										  </li>
 
-                                    <div class="col-md-12">
-                                        <div class="content-pad single-course-detail">
-                                            <div class="course-detail" style="border-top: 0px;">                                             
+										</ul>
+									</nav>
+									<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+					   <div class="content-dropcap v1" style="padding-top: 50px;">							
+							<div class="row">
+								
+							 <div class="col-md-9">
+								<div class="content-dropcap v1">
+									<p>Este departamento incluirá aspectos de las disciplinas que se relacionan con la identificación, evaluación, aprovechamiento y manejo de los recursos naturales, a partir de un enfoque centrado en el desarrollo de la ingeniería, el diagnóstico, la remediación y la preservación del medio ambiente. Se justifica por la creciente necesidad de aprovechar en forma eficiente y sustentable los recursos naturales y por la exigencia de desarrollar alternativas que detengan y reviertan los problemas ambientales. <br/><br/>Incluirá aspectos como: biotecnología, nuevas fuentes de energía; técnicas innovadoras de cosecha y aprovechamiento del agua; diagnóstico y aprovechamiento de suelos, recursos forestales y recursos minerales; mecanismos para mejorar los modelos de explotación de esos recursos y medidas para el tratamiento integral de los residuos, entre otros temas. <br/><br/>Transporte, Destino y Tratamiento de Contaminantes (TTC). El objeto es estudiar los fenómenos, el desarrollo y la concepción de sistemas integrales para la depuración de aguas residuales. Involucra el estudio de los sistemas desde el punto de vista físico, químico y biológico entre otros. Los profesores investigadores de esta área imparten docencia, entre otros, en temas tales como: Química, biología, termodinámica, fenómenos de transporte. <br/><br/>Aprovechamiento de Recursos Hídricos (ARH). Tiene como objeto el estudio integral del recurso agua. Incluye aspectos tales como la planeación, optimización y gestión de los recursos hídricos y de la infraestructura hidráulica necesaria para su aprovechamiento. Los profesores investigadores de esta área imparten docencia, entre otros, en temas tales como: Mecánica de fluidos, Dinámica de fluidos computacional e hidrodinámica.
+									</p>
+								</div>
 
-                                                <div class="content-content">												
-        	    			
-                                                    <div class="content-dropcap v1">
-														<p>Este departamento incluirá aspectos de las disciplinas que se relacionan con la identificación, evaluación, aprovechamiento y manejo de los recursos naturales, a partir de un enfoque centrado en el desarrollo de la ingeniería, el diagnóstico, la remediación y la preservación del medio ambiente. Se justifica por la creciente necesidad de aprovechar en forma eficiente y sustentable los recursos naturales y por la exigencia de desarrollar alternativas que detengan y reviertan los problemas ambientales. <br/><br/>Incluirá aspectos como: biotecnología, nuevas fuentes de energía; técnicas innovadoras de cosecha y aprovechamiento del agua; diagnóstico y aprovechamiento de suelos, recursos forestales y recursos minerales; mecanismos para mejorar los modelos de explotación de esos recursos y medidas para el tratamiento integral de los residuos, entre otros temas. <br/><br/>Transporte, Destino y Tratamiento de Contaminantes (TTC). El objeto es estudiar los fenómenos, el desarrollo y la concepción de sistemas integrales para la depuración de aguas residuales. Involucra el estudio de los sistemas desde el punto de vista físico, químico y biológico entre otros. Los profesores investigadores de esta área imparten docencia, entre otros, en temas tales como: Química, biología, termodinámica, fenómenos de transporte. <br/><br/>Aprovechamiento de Recursos Hídricos (ARH). Tiene como objeto el estudio integral del recurso agua. Incluye aspectos tales como la planeación, optimización y gestión de los recursos hídricos y de la infraestructura hidráulica necesaria para su aprovechamiento. Los profesores investigadores de esta área imparten docencia, entre otros, en temas tales como: Mecánica de fluidos, Dinámica de fluidos computacional e hidrodinámica.
-														</p>
-                                                    </div>
+								<div class="event-more-detail">
+									<h4 class="title" style="font-size: 18px; color: #343434; margin: 20px 0px;">Mensaje del Jefe de Departamento de Recursos de la Tierra</h4>
 
-                                                    <div class="event-more-detail">
-                                                        <h4>Mensaje del Jefe de Departamento de Recursos de la Tierra</h4>
-                                                        
-														La Universidad Autónoma Metropolitana, una de las instituciones de educación superior con amplio reconocimiento dentro y fuera del país, está constituida por mujeres y hombres que a lo largo del tiempo han sabido construir un lugar en el que la docencia, la investigación y la preservación y difusión de la cultura van más allá del espacio universitario. Quienes hoy tenemos la oportunidad de formar parte de esta comunidad tenemos el compromiso y deber de preservar y poner en alto los valores y experiencias que han hecho de nuestra Universidad una referencia. Este es, el compromiso que tengo para con mi Universidad.<br/><br/>Gracias a todos por la oportunidad de servirles.<br/><br/>Dr. Yuri Reyes Mercado<br/><br/>Jefe del Departamento de Recursos de la Tierra
-                                                    </div>												
-                                                                                     
-                                                </div><!--/content-content-->
-                                            </div><!--/course-detail-->
-                                        </div><!--/single-content-detail-->         
-                                    </div>
-                                </div>
-                            </article>
+									La Universidad Autónoma Metropolitana, una de las instituciones de educación superior con amplio reconocimiento dentro y fuera del país, está constituida por mujeres y hombres que a lo largo del tiempo han sabido construir un lugar en el que la docencia, la investigación y la preservación y difusión de la cultura van más allá del espacio universitario. Quienes hoy tenemos la oportunidad de formar parte de esta comunidad tenemos el compromiso y deber de preservar y poner en alto los valores y experiencias que han hecho de nuestra Universidad una referencia. Este es, el compromiso que tengo para con mi Universidad.<br/><br/>Gracias a todos por la oportunidad de servirles.<br/><br/>Dr. Yuri Reyes Mercado<br/><br/>Jefe del Departamento de Recursos de la Tierra
+								</div>	       
                         </div>
 						
 										                              
 
                         <div class="col-md-3">
-							<div class="col-md-12 col-sm-12 mb-5 mt-5">
+							<div class="col-md-12 col-sm-12 mb-5">
 									<div class="media professor">
 										
 										<img src="images/about/index1/fotos/Yuri_Reyes_Mercado.jpg" alt="image" class="imagen-encabezado mb-3">
@@ -403,7 +423,137 @@
                                 </div>
                             </div><!-- sidebar -->
                         </div><!-- /col-md-3 -->
-                    </div>
+						</div>
+														
+					  </div>   
+					</div>
+				  <div class="tab-pane fade" id="investigaciones" role="tabpanel" aria-labelledby="investigaciones-tab">
+					   <div class="row" style="padding-top: 50px;">
+                       		<div class="flat-accordion">                               
+                                <div class="flat-toggle">
+                                    <div class="toggle-title">Información general</div>
+									<div class="toggle-content">El departamento plantea la creación de conocimiento de frontera en las áreas de la ingeniería electrónica y las ciencias computacionales, a través de proyectos de investigación relevantes que sirvan como referencia a nivel nacional e internacional.
+
+    
+ 									</div>
+								</div>	
+								<div class="flat-toggle">
+                                    <div class="toggle-title">Áreas de investigación</div>
+									<div class="toggle-content">
+										<section class="main-content blog-posts">
+											<div class="container">
+												<div class="row">
+													<div class="post-wrap">
+														<div class="col-md-12">
+															<div class="blog-listing">
+																<div class="blog-item">
+																	<div class="post-item blog-post-item">
+																		<div class="row">
+																			<div class="col-md-3 col-sm-12">
+																				<div class="content-pad">
+																					<div class="blog-thumbnail">
+																						<div class="item-thumbnail-gallery">
+																							<div class="item-thumbnail">
+																								 <a href="#">
+																								<img src="http://www.ler.uam.mx/work/models/UAMLerma/Resource/49/1/images/linea1.JPG" alt="image" style="width: 409px;">
+																								<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																								<div class="thumbnail-hoverlay-cross"></div>
+																								</a>
+																							</div>
+																						</div>            
+																					</div><!--/blog-thumbnail-->																				
+																				</div><!--/blog-thumbnail-->
+																			</div>
+
+																			<div class="col-md-9 col-sm-12">
+																				<div class="content-pad">
+																					<div class="item-content"><h3 class="title">Transporte, Destino y Tratamiento de Contaminantes (TTC)</h3>
+																						<div class="item-excerpt blog-item-excerpt">
+																							<p>El objeto es estudiar los fenómenos, el desarrollo y la concepción de sistemas integrales para la depuración de aguas residuales. Involucra el estudio de los sistemas desde el punto de vista físico, químico y biológico entre otros. Los profesores investigadores de esta área imparten docencia, entre otros, en temas tales como: Química, biología, termodinámica, fenómenos de transporte.</p>
+																						</div>																						
+																					</div>
+																				</div>
+																			</div>
+																		</div><!--/post-item-->
+																	</div>
+																</div><!-- /blog-item -->
+																<div class="blog-item">
+																	<div class="post-item blog-post-item">
+																		<div class="row">
+																			<div class="col-md-3 col-sm-12">
+																				<div class="content-pad">
+																					<div class="blog-thumbnail">
+																						<div class="item-thumbnail-gallery">
+																							<div class="item-thumbnail">
+																								 <a href="#">
+																								<img src="http://www.ler.uam.mx/work/models/UAMLerma/Resource/49/1/images/linea2.JPG" alt="image" style="width: 409px;">
+																								<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																								<div class="thumbnail-hoverlay-cross"></div>
+																								</a>
+																							</div>
+																						</div>            
+																					</div><!--/blog-thumbnail-->																				
+																				</div><!--/blog-thumbnail-->
+																			</div>
+
+																			<div class="col-md-9 col-sm-12">
+																				<div class="content-pad">
+																					<div class="item-content"><h3 class="title">Aprovechamiento de Recursos Hídricos (ARH)</h3>
+																						<div class="item-excerpt blog-item-excerpt">
+																							<p>Tiene como objeto el estudio integral del recurso agua. Incluye aspectos tales como la planeación, optimización y gestión de los recursos hídricos y de la infraestructura hidráulica necesaria para su aprovechamiento. Los profesores investigadores de esta área imparten docencia, entre otros, en temas tales como: Mecánica de fluidos, Dinámica de fluidos computacional e hidrodinámica.</p>
+																						</div>																						
+																					</div>
+																				</div>
+																			</div>
+																		</div><!--/post-item-->
+																	</div>
+																</div><!-- /blog-item -->
+
+																
+															</div><!-- /blog-listing -->
+														</div><!-- /col-md-9 -->
+
+
+													</div>
+												</div>
+											</div>
+										</section>
+
+									</div>
+							
+								</div>
+								<div class="flat-toggle">
+                                    <div class="toggle-title">Cuerpos académicos</div>
+									<div class="toggle-content">Por definir información </div>
+								</div>
+								<div class="flat-toggle">
+                                    <div class="toggle-title">Proyectos de investigación</div>
+									<div class="toggle-content">
+										<ul class="list tick">
+											<li>Diseño y desarrollo del prototipo de un módem OFDM de banda ancha con codificación de canal FEC para la transmisión de datos por la línea eléctrica doméstica.</li>
+    										<li>Cómputo académico en la UAM Lerma (en colaboración con el Departamento de Recursos de la Tierra).</li>
+    										<li>Laboratorio de investigación y desarrollo de cómputo móvil (en colaboración con la Unidad Cuajimalpa).</li>
+    										<li>Materiales semiconductores y cómputo cuántico.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="flat-toggle">
+                                    <div class="toggle-title" onClick="location.href='directorio_investigadores_rt.html'">Directorio de investigadores</div>
+									
+								</div>
+							</div>			
+
+						
+					  </div>
+				  </div>			 
+					 
+				</div>
+								</div>
+						
+                       
+                    		</div>
+						</div>
+					</section>
                 </div>
             </div>
         </section>
