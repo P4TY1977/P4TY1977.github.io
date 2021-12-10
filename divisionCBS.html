@@ -5,7 +5,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Convocatorias y Dictámenes (maquetación)</title>
+    <title>División CBS(maquetación)</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -19,34 +19,35 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">	
+	
     
     <!-- Colors -->
     <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
     
     <!-- Animation Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/settings.css">
 
     <!-- Favicon and touch icons  -->
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
     <link href="#" rel="shortcut icon">
-
-    <!--[if lt IE 9]>
-        <script src="javascript/html5shiv.js"></script>
-        <script src="javascript/respond.min.js"></script>
-    <![endif]-->
+	<!--Estilos para datos de director y contactos-->
 	<style type="text/css">
-		.border.widget .widget-inner {
-			border: none;   
+	
+		.professor .media-body span, .professor .media-body span i, .testimonial-item .media-body {
+			font-size:14px;
+			text-transform: none;
 		}
-		 .titular {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 17px;
-			line-height: 1.2em;
-			color: #253b80;
-		}
-		.related-course .cr-content .cr-title span, .titular {
+		.professor .media-body a{font-size:24px;}
+			.imagen-encabezado{ border-radius: 35%;
+			margin-right: 50px;}
+			.event-more-detail p a{color: #253b80;}
+			.single-course-detail .content-content .event-more-detail {   
+				border-bottom: none;
+			}
+			.related-course .cr-content .cr-title span, .titular {
 				font-family: 'Open Sans', sans-serif;
 				font-size: 17px;
 				line-height: 1.2em;
@@ -55,38 +56,49 @@
 			 .related-course .cr-content span
 			{
 				text-transform: none;
-			}
+			}		
 	</style>
-	<link rel="stylesheet" type="text/css" href="css/tabs.css">
+	<!-- Estilos para carrusel -->
 	<style type="text/css">
-		section {
-    padding: 60px 0;
-}
-
-
-
-	button	{
-	height: auto; /* para que se ajusten al texto las pestañas del tab*/
-  
-}
-
-
-#tabs .nav-tabs .nav-link {   
-    font-size: 18px;
-	margin: 20px;
-}
-		
-
+		.page-title.parallax4 {
+			padding: 25px 0 ;
+		}
+		h6{font-weight: bold;}
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<style type="text/css">
+		
+		 @media (max-width: 639px) {
+			  .tooltip-inner{max-width:200px;padding:.25rem .5rem;color:#fff;text-align:center;background-color:#000;border-radius:.25rem}
+		 }
+		  @media (min-width: 639px) {
+			  .tooltip-inner{max-width:400px;padding:.25rem .5rem;color:#fff;text-align:center;background-color:#000;border-radius:.25rem}
+		 }
+	  </style>
+
+	<script type="text/javascript">
+		function addRemoveClass(elemento){
+			
+			if(elemento.lastElementChild.className.indexOf("show_sub_menu") == -1)
+			    elemento.lastElementChild.className+=" show_sub_menu";
+			else
+				elemento.lastElementChild.className="sub-menu"
+		}
+	</script>
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <body class="header-sticky">
     
     <div class="boxed">
+
        
-      <div class="header-inner-pages">
+        <div class="header-inner-pages">
             <div class="top">
                 <div class="container">
                     <div class="row">
@@ -183,7 +195,6 @@
             </div><!-- Top -->    
         </div><!-- header-inner-pages -->
 
-
         <!-- Header -->
         <header id="header" class="header v2">
             <div class="header-wrap">
@@ -210,27 +221,23 @@
                                     </li>
                                 </ul>
                             </div>
-                            </div>
+						</div>
 					</div><!-- /.logo -->
 				</div><!-- /.header-wrap -->
 			</div><!-- /.container-->
 		<!--/div--><!-- /.header-wrap-->
         </header><!-- /.header -->
-        
-		<div class="page-title full-color">
+ 		<div class="page-title full-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">                    
-                        <div class="page-title-heading">
-                            <h2 class="title">DCBI Convocatorias y Dictámenes</h2>
-                        </div>                                     
-                    </div><!-- /.col-md-12 -->  
+                    <div class="page-title-heading col-md-12">												
+							<a href="javascript:void(0)"><h2 class="title">División de Ciencias Biológicas y de la Salud</h2></a>	
+                    </div><!-- /.col-md-12 -->  					
                 </div><!-- /.row -->  
+				
             </div><!-- /.container -->                      
         </div><!-- /page-title -->
-        
-	
-       <!--header menú oscuro-->
+		<!--header menú oscuro-->
         <div class="bg-dark bg-gradient">
             <div class="container"> 
 				<div class="row">
@@ -246,12 +253,11 @@
 							<div class="collapse navbar-collapse" id="menuDivision">
 								  <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
 									<li class="nav-item dropdown">
-									  <a class="nav-link dropdown-toggle" id="DCBI"  role="button" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:void(0)">DCBI</a>
+									  <a class="nav-link dropdown-toggle" id="DCBI"  role="button" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:void(0)">DCBS</a>
 										<ul class="dropdown-menu submenu" aria-labelledby="DCBI">
-											<li><a class="dropdown-item" href="divisionCBI.html">Información General <i class="fa fa-check"></i></a></li>
-											<li><a class="dropdown-item" href="transparencia.html">Transparencia <i class="fa fa-check"></i></a></li>											
-											<li><a class="dropdown-item" href="convocatorias_dictamenes.html" title="Tablero">Convocatorias y Dictámenes <i class="fa fa-check"></i></a></li>	
-											
+											<li><a class="dropdown-item" href="divisionCBS.html">Información General <i class="fa fa-check"></i></a></li>
+											<li><a class="dropdown-item" href="transparencia_cbs.html">Transparencia <i class="fa fa-check"></i></a></li>										
+											<li><a class="dropdown-item" href="convocatorias_dictamenes_cbs.html" title="Tablero">Convocatorias y Dictámenes <i class="fa fa-check"></i></a></li>
 									  </ul>
 									</li>
 									<li class="nav-item dropdown">
@@ -260,11 +266,12 @@
 											<li><a class="dropdown-item" href="https://admision.uam.mx/adm_convocatoria.html">Admisión</a></li>
 											<li><hr class="dropdown-divider"></li>
 											<li class="nav-item dropdown disabled">Licenciaturas</li>
-											<li><a class="dropdown-item" href="#">Ingeniería en Recursos Hídricos</a></li>										
-											<li><a class="dropdown-item" href="lic_ict.html">Ingeniería en Computación y Telecomunicaciones <i class="fa fa-check"></i></a></li>
-											<li><a class="dropdown-item" href="#">Ingeniería en Sistemas Mecatrónicos Industriales</a></li>
+											<li><a class="dropdown-item" href="#">Biología Ambiental</a></li>										
+											<li><a class="dropdown-item" href="lic_cta.html">Ciencia y Tecnología de Alimentos <i class="fa fa-check"></i></a></li>
+											<li><a class="dropdown-item" href="#">Psicología Biomédica</a></li>
 											<li><hr class="dropdown-divider"></li>
 											<li class="nav-item dropdown disabled">Postgrado</li>
+											<li><a class="dropdown-item" href="#">Doctorado en Ciencias Biológicas y de la Salud</a></li>
 											<li><hr class="dropdown-divider"></li>
 											<li class="nav-item dropdown disabled">Educación en línea</li>
 									  </ul>
@@ -274,26 +281,15 @@
 										Departamentos
 									  </a>
 									  <ul class="dropdown-menu" aria-labelledby="departamentos">						
-										<li><a class="dropdown-item" href="#">Departamento de Procesos Productivos</a></li>
-										<li><a class="dropdown-item" href="departamentoRT.html">Departamento de Recursos de la Tierra <i class="fa fa-check"></i></a></li>
-										<li><a class="dropdown-item" href="#">Departamento de Sistemas de Información y Comunicaciones</a></li>
-										
+										<li><a class="dropdown-item" href="#">Departamento de Ciencias Ambientales</a></li>
+										<li><a class="dropdown-item" href="departamentoCA.html">Departamento de Ciencias de la Alimentación <i class="fa fa-check"></i></a></li>
+										<li><a class="dropdown-item" href="#">Departamento de Ciencias de la Salud</a></li>											
 									  </ul>				
 									</li>
-									  <li class="nav-item dropdown">
-									  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="investigacion" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="sólo CBI quiere su menú de investigación en este lugar">
-										Investigación
-									  </a>
-									  <ul class="dropdown-menu" aria-labelledby="investigacion">						
-										<li><a class="dropdown-item" href="#">Departamento de Procesos Productivos</a></li>
-										<li><a class="dropdown-item" href="#">Departamento de Recursos de la Tierra</a></li>
-										<li><a class="dropdown-item" href="#">Departamento de Sistemas de Información y Comunicaciones</a></li>
-										
-									  </ul>				
-									</li>
+									 
 									  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:void(0)" id="consejoDivisional" role="button" data-bs-toggle="dropdown" aria-expanded="false">Consejo Divisional</a>
 										<ul class="dropdown-menu" aria-labelledby="consejoDivisional">  
-											<li><a class="dropdown-item" href="consejoCBI.html">Oficina Técnica <i class="fa fa-check"></i></a></li>
+											<li><a class="dropdown-item" href="consejoCBS.html">Oficina Técnica <i class="fa fa-check"></i></a></li>
 											<li><a class="dropdown-item" href="#">Sesiones del Consejo</a></li>
 											<li><a class="dropdown-item" href="#">Integrantes del Consejo</a></li>											
 											<li><a class="dropdown-item" href="#">Comisiones y Comités</a></li>											
@@ -301,10 +297,8 @@
 											<li><a class="dropdown-item" href="#">Convocatorias</a></li>
 										</ul><!-- /.submenu -->  
 									</li>
+									
 									<li>
-										<a class="nav-link" href="#" style="white-space: nowrap;">Comité Editorial</a>   
-									</li>
-									  <li>
 										<a class="nav-link" href="planta_academica_CBI.html">Directorio</a>   
 									</li> 
 								  </ul>     
@@ -320,81 +314,128 @@
 			</div>
 			</div>
 		<!--/header-->
-        
 
-        <section id="tabs">
-	<div class="container">
-		
-		<div class="row">
-			<div class="col-12">
-				<nav>
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-					  <li class="nav-item" role="presentation">
-						<button class="nav-item nav-link active" id="tablero-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tablero Divisional</button>
-					  </li>
-					  <li class="nav-item" role="presentation">
-						<button class="nav-link" id="admision-tab" data-bs-toggle="tab" data-bs-target="#conacyt" type="button" role="tab" aria-controls="conacyt" aria-selected="false">Admisión y promoción</button>
-					  </li>
-					 
-					</ul>
-				</nav>
-				<div class="tab-content" id="myTabContent">
-				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tablero-tab">
-					   <div class="content-dropcap v1" style="padding-top: 50px;">							
+       <section class="main-content course-single">
+            <div class="container">
+                <div class="content-course">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- Carrusel -->
+							<div class="page-title parallax parallax4">
+								<div class="container">
+									<div class="row">
+										<div class="post-wrap">                       
 
-							Información pendiente
+											<div class="posts-carousel">
+												<div class="flat-event">
+													<div class="flat-blog-carousel" data-item="3" data-nav="true" data-dots="false" data-auto="true" id="principal" >
+														<div class="grid-item" data-merge="6">
+															<div class="grid-item-inner">
+																<div class="event-item">
+																	<div class="event-thumbnail">
+																		<a href="#"><img src="images/carrusel_principal/general1.jpg" alt="image">
+																		</a>
+																	</div><!-- /event-thumbnail -->                                             
 
-														
-					  </div>   
+																</div>
+															</div>
+														</div>
+
+														<div class="grid-item" data-merge="6">
+															<div class="grid-item-inner">
+																<div class="event-item">
+																	<div class="event-thumbnail">
+																		<a href="#">
+																			<img src="images/carrusel_principal/general2.jpg" alt="image">
+																		</a>
+																	</div><!-- /event-thumbnail -->
+
+
+																</div>
+															</div>
+														</div>
+
+														<div class="grid-item" data-merge="6">
+															<div class="grid-item-inner">
+																<div class="event-item">
+																	<div class="event-thumbnail">
+																		<a href="#">
+																			<img src="images/carrusel_principal/general3.jpg" alt="image">
+																		</a>
+																	</div><!-- /event-thumbnail -->
+
+
+																</div>
+															</div>
+														</div>
+
+														<div class="grid-item" data-merge="6">
+															<div class="grid-item-inner">
+																<div class="event-item">
+																	<div class="event-thumbnail">
+																		<a href="#">
+																			<img src="images/carrusel_principal/general4.jpg" alt="image">
+																		</a>
+																	</div><!-- /event-thumbnail -->
+
+																</div>
+															</div>
+														</div>
+
+														<div class="grid-item" data-merge="6">
+															<div class="grid-item-inner">
+																<div class="event-item">
+																	<div class="event-thumbnail">
+																		<a href="#">
+																			<img src="images/carrusel_principal/general5.jpg" alt="image">
+																		</a>
+																	</div><!-- /event-thumbnail -->
+
+																</div>
+															</div>
+														</div>
+
+
+
+														<!-- /grid-item -->
+													</div><!-- /flat-blog-carousel -->
+												</div><!-- /flat-event -->
+											</div><!-- /posts-carousel -->
+										</div><!-- /post-wrap -->
+									</div><!-- /row -->
+								</div><!-- /container -->
+							</div><!-- /page-title -->
+						<!-- Fin de Carrusel -->  
+						</div>
 					</div>
-				  <div class="tab-pane fade" id="conacyt" role="tabpanel" aria-labelledby="admision-tab">
-					   <div class="row" style="padding-top: 50px;">
-                        <div class="col-md-12">
-							 <div class="flat-accordion">
-                                <div class="name-toggle">
-                                    <h2 class="title">Admisión y promoción de personal académico</h2>
-                                </div>
-                                <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='https://www.uam.mx/convoper/convoacad/index.html'">Convocatorias de Ingreso</div>
-                                    
-                                </div><!-- /toggle -->
-                                <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Guia_de_documentos_para_concurso.pdf'">Guía rápida de documentos para concursos</div>
-                                </div><!-- /.toggle -->
-                                <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Requisitos_para_concurso.pdf'">Requisitos para concursos</div>                                    
-                                </div><!-- /.toggle -->
-                                <div class="flat-toggle">
-                                    <div class="toggle-title">Formatos</div>
-                                    <div class="toggle-content">
-                                        <div class="info"> 
-											<ul class="list disc">
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Evaluacion_Curricular.pdf" target="_blank">Registro Concurso de Evaluación Curricular</a></li>
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Oposicion.pdf" target="_blank">Registro Concurso de Oposición</a></li>
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Anexo_de_la_solicitud.doc" target="_blank">Anexo de la solicitud</a></li>
-											</ul>
-                                        </div>
-                                    </div>
-                                </div><!-- /.toggle -->
+                    <div class="row">
+                        <div class="col-md-9">
+                            <article class="post-course">
+                                <div class="row">                                  
 
-                                <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='http://www.uam.mx/academia/dictaminadoras/index.html'">Criterios de dictaminación</div>                                    
-                                </div><!-- /.toggle -->						
-                               
-                            </div><!-- /.accordion -->
-                        </div><!--/col-md-6 col-sm-6 -->
-						
-						
-					  </div>
-				  </div>			 
-					 
-				</div>
-			</div>
-			
-			 <div class="col-md-12">
+                                    <div class="col-md-12">
                                         <div class="content-pad single-course-detail">
                                             <div class="course-detail" style="border-top: 0px;">    
-                                                <div class="content-content">		
+                                                <div class="content-content">												
+        	    			
+                                                    <div class="content-dropcap v1">
+														<p>Las ciencias de la vida constituyen un campo prioritario para el desarrollo de la investigación, la formación de recursos humanos y la aplicación del conocimiento en la solución de los principales problemas a nivel nacional e internacional, incluyendo, por supuesto, el campo social.
+														</p>
+														<p>En la concepción de la biología moderna, la inclusión de nuevos campos (como la genómica) ha forzado a los biólogos a conectar la biología evolutiva con la biología molecular, campos de conocimiento que anteriormente se cultivaban por separado. La biología actual funde la genómica con la bioinformática, la genética evolutiva y otras herramientas para brindar explicaciones novedosas a paradojas que no podían haberse resuelto con la biología tradicional, es decir, aquella derivada de la teoría sintética de la evolución.</p>
+														<p>En esta División se incluyen tres Departamentos que identifican un conjunto de problemas y soluciones en correspondencia con los avances de la ciencia y de sus aplicaciones tecnológicas. El proyecto académico de la DCBS está concebido con una fuerte interrelación y cooperación entre sus departamentos y con las otras dos Divisiones de la Unidad. Sus departamentos están propuestos con base en un equilibrio disciplinario, de manera que cada actividad académica estará sustentada en más de un departamento y complementada de forma necesaria por las otras dos divisiones, a efecto de cumplir con los objetivos de transversalidad trazados dentro del proyecto académico de la Unidad.</p>
+														<p>La División de Ciencias Biológicas y de la Salud se basa en la vinculación con sectores productivos, a través de la cual se pretende hacer aportaciones a los profesionales de estas áreas desde la academia. Funcionará con ejes que favorezcan la innovación, la creatividad, la diversidad, la flexibilidad de operación y la complementación interdisciplinaria.</p>
+                                                    </div>
+
+                                                    <div class="event-more-detail">
+                                                        <h4>Nuestra Misión</h4>
+                                                       <p>.....</p>
+
+														<h4>Nuestra Visión</h4>
+
+														<p>...</p>
+														<h4><a href="#" target="_blank">Plan de Desarrollo de la División de Ciencias Biológicas y de la Salud <i class="fa fa-arrow-right"></i></a></h4>
+                                                    </div>
+													
                                                     <div class="related-course">
                                                         <h3>Contacto</h3>
                                                         <div class="cr-content">
@@ -402,12 +443,13 @@
                                                                 <div class="col-md-6 col-sm-6 related-item">
                                                                    
                                                                     <div class="cr-title ">
-                                                                        <span class="related-cr-title main-color-1-hover">Dr. Edgar López Galván</span>
+                                                                        <span class="related-cr-title main-color-1-hover">Dr. Gustavo Pacheco López</span>
                                                                     </div>
                                                                     <div class="cr-start small-text v1">													 
-																		<span style="font-weight: bold;">Director de División</span><br/>
-																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 (728) 282 7002 Ext. 3005, 3030</span><br/>
-																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;e.lopez@correo.ler.uam.mx</span>
+																		<span style="font-weight: bold;">Director de la División de Ciencias Biológicas y de la Salud</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 (728) 282 7002 Ext. 2000, 2002</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;g.pacheco@correo.ler.uam.mx</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;divisioncbs@correo.ler.uam.mx</span>
 																	</div>
                                                                     <div class="clear"></div>
                                                                 </div>
@@ -415,12 +457,13 @@
                                                                  <div class="col-md-6 col-sm-6 related-item">
                                                                    
                                                                     <div class="cr-title ">
-                                                                        <span class="related-cr-title main-color-1-hover">Dr. Carlos Eduardo Díaz Gutiérrez </span>
+                                                                        <span class="related-cr-title main-color-1-hover">Dr. Augusto Jacobo Montiel Castro</span>
                                                                     </div>
                                                                     <div class="cr-start small-text v1">													 
-																		<span style="font-weight: bold;">Secretario Académico</span><br/>
-																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 (728) 282 7002 Ext. 3005, 3030</span><br/>
-																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;c.diaz@correo.ler.uam.mx</span>
+																		<span style="font-weight: bold;">Secretario Académico de la División de Ciencias Biológicas y de la Salud</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 (728) 282 7002 Ext. 2050</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp; a.montiel@correo.ler.uam.mx</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp; secretariacbs@correo.ler.uam.mx</span>
 																	</div>
                                                                     <div class="clear"></div>
                                                                 </div>
@@ -431,16 +474,76 @@
                                             </div><!--/course-detail-->
                                         </div><!--/single-content-detail-->         
                                     </div>
-		</div>
-	</div>
-</section>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-md-3">
+							 <div class="col-md-12 col-sm-12 mb-5 mt-5">
+									<div class="media professor">
+
+										<img src="images/about/index1/fotos/DrGustavoPacheco.jpg" alt="image" class="imagen-encabezado mb-3">
+
+
+
+										<div class="media-body">
+											<h4 class="media-heading main-color-2"><a class="main-color-2" href="#">Dr. Gustavo Pacheco López</a></h4><br/>
+											<span style="font-weight: bold;">Director de la División de Ciencias Biológicas y de la Salud</span><br/><br/>
+											<span><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 (728) 282 7002 Ext. 3005, 3030+01 (728) 282 7002 Ext. 2000, 2002</span><br/><span><i class="fa fa-envelope"></i>&nbsp;&nbsp; g.pacheco@correo.ler.uam.mx</span><br/><span><i class="fa fa-envelope"></i>&nbsp;&nbsp;divisioncbs@correo.ler.uam.mx</span><br/>
+											<a href="#"><span><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Currículum</span></a><br/>
+											<a href="https://business.facebook.com/CBS.LERMA"><span><i class="fa fa-facebook"></i>&nbsp;&nbsp;https://business.facebook.com/CBS.LERMA</span></a>
+										</div>
+									</div>
+							  </div>
+                            <div class="sidebar">
+								<div class="widget widget-nav-menu">
+                                    <div class=" widget-inner">
+                                        <h2 class="widget-title maincolor2">Enlaces</h2>
+                                        <div class="menu-main-navigation-container">
+											
+                                            <ul id="menu-links-navigation-1" class="menu">
+                                                <li class="menu-item">
+                                                    <a href="coordinacion_enlace_academico.html#ss-tab">Servicio social <i class="fa fa-check"></i></a> 
+													
+                                                </li>
+												
+												<li class="menu-item">
+													<a href="#">Proyectos terminales</a>
+												</li>																						
+											</ul>											
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget widget-nav-menu">
+                                    <div class=" widget-inner">										
+                                        <h2 class="widget-title maincolor2">Ligas de interés</h2>
+                                        <div class="menu-main-navigation-container">
+											
+                                            <ul id="menu-main-navigation-1" class="menu">
+                                                <li class="menu-item">
+                                                    <a href="#">Identidad Divisional</a> 
+													
+                                                </li>											
+											</ul>											
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- sidebar -->
+                        </div><!-- /col-md-3 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+	
+		
 
         <footer class="footer full-color">
-           
-		 <section id="bottom">
+            <section id="bottom">
                 <div class="section-inner">
                     <div class="container">
                         <div class="row normal-sidebar">
+							
+							
 						<div class="widget widget-text">
                                 <div class="row">
                                     <div class="col-md-2">
@@ -625,8 +728,10 @@
         </footer>
 
         <!-- Javascript -->
+       
         <script type="text/javascript" src="javascript/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+	     <script type="text/javascript" src="javascript/bootstrap.bundle.js"></script>
+       
         <script type="text/javascript" src="javascript/jquery.easing.js"></script>
         
         <script type="text/javascript" src="javascript/owl.carousel.js"></script>
@@ -639,62 +744,59 @@
         
         <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
         <script type="text/javascript" src="javascript/main.js"></script>
-		<script>
-			function sortTable(n, idTabla) {
-			  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-			  table = document.getElementById(idTabla);
-			  switching = true;
-			  //Set the sorting direction to ascending:
-			  dir = "asc"; 
-			  /*Make a loop that will continue until
-			  no switching has been done:*/
-			  while (switching) {
-				//start by saying: no switching is done:
-				switching = false;
-				rows = table.rows;
-				/*Loop through all table rows (except the
-				first, which contains table headers):*/
-				for (i = 1; i < (rows.length - 1); i++) {
-				  //start by saying there should be no switching:
-				  shouldSwitch = false;
-				  /*Get the two elements you want to compare,
-				  one from current row and one from the next:*/
-				  x = rows[i].getElementsByTagName("TD")[n];
-				  y = rows[i + 1].getElementsByTagName("TD")[n];
-				  /*check if the two rows should switch place,
-				  based on the direction, asc or desc:*/
-				  if (dir == "asc") {
-					if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-					  //if so, mark as a switch and break the loop:
-					  shouldSwitch= true;
-					  break;
-					}
-				  } else if (dir == "desc") {
-					if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-					  //if so, mark as a switch and break the loop:
-					  shouldSwitch = true;
-					  break;
-					}
-				  }
-				}
-				if (shouldSwitch) {
-				  /*If a switch has been marked, make the switch
-				  and mark that a switch has been done:*/
-				  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-				  switching = true;
-				  //Each time a switch is done, increase this count by 1:
-				  switchcount ++;      
-				} else {
-				  /*If no switching has been done AND the direction is "asc",
-				  set the direction to "desc" and run the while loop again.*/
-				  if (switchcount == 0 && dir == "asc") {
-					dir = "desc";
-					switching = true;
-				  }
-				}
-			  }
-			}
-			</script>
+		<script type="text/javascript">
+				var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+				var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+				  return new bootstrap.Tooltip(tooltipTriggerEl)
+				})
+		</script>
+       <script type="text/javascript">
+		   document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  // close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {	
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+// DOMContentLoaded  end
+       </script>
+	
+	<script type="text/javascript">
+			var owl = $('#principal');
+			owl.owlCarousel({ 
+				loop:true,
+				autoplay:true,
+				autoplayTimeout:6000,
+				autoplayHoverPause:true
+			});
+		</script>
+
     </div>
 </body>
 </html>

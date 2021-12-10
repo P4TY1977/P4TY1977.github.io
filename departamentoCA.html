@@ -5,7 +5,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Licenciatura en Ingeniería en Computación y Telecomunicaciones (maquetación)</title>
+    <title>Depto Ciencias de la Alimentación (maquetación)</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -19,56 +19,96 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">	
+	
     
     <!-- Colors -->
     <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
     
     <!-- Animation Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/settings.css">
 
     <!-- Favicon and touch icons  -->
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
     <link href="#" rel="shortcut icon">
+	<!--Estilos para datos de director y contactos-->
+	<style type="text/css">
+	
+		.professor .media-body span, .professor .media-body span i, .testimonial-item .media-body {
+			font-size:14px;
+			text-transform: none;
+		}
+		.professor .media-body a{font-size:24px;}
+			.imagen-encabezado{ border-radius: 35%;
+			margin-right: 50px;}
+			.event-more-detail p a{color: #253b80;}
+			.single-course-detail .content-content .event-more-detail {   
+				border-bottom: none;
+			}
+			.related-course .cr-content .cr-title span, .titular {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 17px;
+				line-height: 1.2em;
+				color: #253b80;
+			}
+			 .related-course .cr-content span
+			{
+				text-transform: none;
+			}		
+	</style>
+	<!-- Estilos para carrusel -->
+	<style type="text/css">
+		.page-title.parallax4 {
+			padding: 25px 0 ;
+		}
+		h6{font-weight: bold;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+	<script type="text/javascript">
+		function addRemoveClass(elemento){
+			
+			if(elemento.lastElementChild.className.indexOf("show_sub_menu") == -1)
+			    elemento.lastElementChild.className+=" show_sub_menu";
+			else
+				elemento.lastElementChild.className="sub-menu"
+		}
+	</script>
 
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/tabs.css">
 	<style type="text/css">
-		.border.widget .widget-inner {
-			border: none;   
-		}
-	</style>
-	<style type="text/css">
-		.border.widget .widget-inner {
-			border: none;   
-		}
-		 .titular {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 17px;
-			line-height: 1.2em;
-			color: #253b80;
-		}
-		.info h3, .toggle-content h3{
-			font-size: 17px;
-		}
-		.name-toggle .title{
-			font-size: 19px; 
-			font-weight: 900;
-		}
+		section {
+    padding: 60px 0;
+}
+
+
+
+	button	{
+	height: auto; /* para que se ajusten al texto las pestañas del tab*/
+  
+}
+
+
+#tabs .nav-tabs .nav-link {   
+    font-size: 18px;
+	margin: 20px;
+}
 		
-		
+
 	</style>
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
 
 </head>
 
 <body class="header-sticky">
     
-    <div class="boxed">     
-		 <div class="header-inner-pages">
+    <div class="boxed">
+		<div class="header-inner-pages">
             <div class="top">
                 <div class="container">
                     <div class="row">
@@ -165,7 +205,7 @@
             </div><!-- Top -->    
         </div><!-- header-inner-pages -->
 
-         <!-- Header -->
+        <!-- Header -->
         <header id="header" class="header v2">
             <div class="header-wrap">
                 <div class="container">
@@ -195,23 +235,21 @@
 					</div><!-- /.logo -->
 				</div><!-- /.header-wrap -->
 			</div><!-- /.container-->
-		<!--/div--><!-- /.header-wrap-->
-        </header><!-- /.header --><!-- /.header -->
-        
-        
-		<div class="page-title full-color">
+            <!--/div--><!-- /.header-wrap-->
+        </header><!-- /.header -->
+ 		<div class="page-title full-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">                    
-                        <div class="page-title-heading">
-                            <h2 class="title">DCBI: <span style="color: #AD25A8;">Licenciatura en Ingeniería en Computación y Telecomunicaciones</span></h2>
-                        </div>                                     
+                    <div class="page-title-heading col-md-12">	
+						
+						<h2 class="title pt-4">Departamento de Ciencias de la Alimentación</h2>
+							
                     </div><!-- /.col-md-12 -->  
                 </div><!-- /.row -->  
             </div><!-- /.container -->                      
         </div><!-- /page-title -->
-        
-	  <!--header menú oscuro-->
+		
+       <!--header menú oscuro-->
         <div class="bg-dark bg-gradient">
             <div class="container"> 
 				<div class="row">
@@ -227,12 +265,11 @@
 							<div class="collapse navbar-collapse" id="menuDivision">
 								  <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
 									<li class="nav-item dropdown">
-									  <a class="nav-link dropdown-toggle" id="DCBI"  role="button" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:void(0)">DCBI</a>
+									  <a class="nav-link dropdown-toggle" id="DCBI"  role="button" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:void(0)">DCBS</a>
 										<ul class="dropdown-menu submenu" aria-labelledby="DCBI">
-											<li><a class="dropdown-item" href="divisionCBI.html">Información General <i class="fa fa-check"></i></a></li>
-											<li><a class="dropdown-item" href="transparencia_cbi.html">Transparencia <i class="fa fa-check"></i></a></li>										
-											<li><a class="dropdown-item" href="convocatorias_dictamenes_cbi.html" title="Tablero">Convocatorias y Dictámenes <i class="fa fa-check"></i></a></li>	
-											
+											<li><a class="dropdown-item" href="divisionCBS.html">Información General <i class="fa fa-check"></i></a></li>
+											<li><a class="dropdown-item" href="transparencia_cbs.html">Transparencia <i class="fa fa-check"></i></a></li>										
+											<li><a class="dropdown-item" href="convocatorias_dictamenes_cbs.html" title="Tablero">Convocatorias y Dictámenes <i class="fa fa-check"></i></a></li>
 									  </ul>
 									</li>
 									<li class="nav-item dropdown">
@@ -241,11 +278,12 @@
 											<li><a class="dropdown-item" href="https://admision.uam.mx/adm_convocatoria.html">Admisión</a></li>
 											<li><hr class="dropdown-divider"></li>
 											<li class="nav-item dropdown disabled">Licenciaturas</li>
-											<li><a class="dropdown-item" href="#">Ingeniería en Recursos Hídricos</a></li>										
-											<li><a class="dropdown-item" href="lic_ict.html">Ingeniería en Computación y Telecomunicaciones <i class="fa fa-check"></i></a></li>
-											<li><a class="dropdown-item" href="#">Ingeniería en Sistemas Mecatrónicos Industriales</a></li>
+											<li><a class="dropdown-item" href="#">Biología Ambiental</a></li>										
+											<li><a class="dropdown-item" href="lic_cta.html">Ciencia y Tecnología de Alimentos<i class="fa fa-check"></i></a></li>
+											<li><a class="dropdown-item" href="#">Psicología Biomédica</a></li>
 											<li><hr class="dropdown-divider"></li>
 											<li class="nav-item dropdown disabled">Postgrado</li>
+											<li><a class="dropdown-item" href="#">Doctorado en Ciencias Biológicas y de la Salud</a></li>
 											<li><hr class="dropdown-divider"></li>
 											<li class="nav-item dropdown disabled">Educación en línea</li>
 									  </ul>
@@ -255,26 +293,15 @@
 										Departamentos
 									  </a>
 									  <ul class="dropdown-menu" aria-labelledby="departamentos">						
-										<li><a class="dropdown-item" href="#">Departamento de Procesos Productivos</a></li>
-										<li><a class="dropdown-item" href="departamentoRT.html">Departamento de Recursos de la Tierra <i class="fa fa-check"></i></a></li>
-										<li><a class="dropdown-item" href="#">Departamento de Sistemas de Información y Comunicaciones</a></li>
-										
+										<li><a class="dropdown-item" href="#">Departamento de Ciencias Ambientales</a></li>
+										<li><a class="dropdown-item" href="departamentoCA.html">Departamento de Ciencias de la Alimentación <i class="fa fa-check"></i></a></li>
+										<li><a class="dropdown-item" href="#">Departamento de Ciencias de la Salud</a></li>											
 									  </ul>				
 									</li>
-									  <li class="nav-item dropdown">
-									  <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="investigacion" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="sólo CBI quiere su menú de investigación en este lugar">
-										Investigación
-									  </a>
-									  <ul class="dropdown-menu" aria-labelledby="investigacion">						
-										<li><a class="dropdown-item" href="#">Departamento de Procesos Productivos</a></li>
-										<li><a class="dropdown-item" href="#">Departamento de Recursos de la Tierra</a></li>
-										<li><a class="dropdown-item" href="#">Departamento de Sistemas de Información y Comunicaciones</a></li>
-										
-									  </ul>				
-									</li>
+									 
 									  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="javascript:void(0)" id="consejoDivisional" role="button" data-bs-toggle="dropdown" aria-expanded="false">Consejo Divisional</a>
 										<ul class="dropdown-menu" aria-labelledby="consejoDivisional">  
-											<li><a class="dropdown-item" href="consejoCBI.html">Oficina Técnica <i class="fa fa-check"></i></a></li>
+											<li><a class="dropdown-item" href="consejoCBS.html">Oficina Técnica <i class="fa fa-check"></i></a></li>
 											<li><a class="dropdown-item" href="#">Sesiones del Consejo</a></li>
 											<li><a class="dropdown-item" href="#">Integrantes del Consejo</a></li>											
 											<li><a class="dropdown-item" href="#">Comisiones y Comités</a></li>											
@@ -282,10 +309,8 @@
 											<li><a class="dropdown-item" href="#">Convocatorias</a></li>
 										</ul><!-- /.submenu -->  
 									</li>
+									
 									<li>
-										<a class="nav-link" href="#" style="white-space: nowrap;">Comité Editorial</a>   
-									</li>
-									  <li>
 										<a class="nav-link" href="planta_academica_CBI.html">Directorio</a>   
 									</li> 
 								  </ul>     
@@ -301,99 +326,247 @@
 			</div>
 			</div>
 		<!--/header-->
-     
-        
-        <section class="flat-row padding-small">
+
+       <section class="main-content course-single">
             <div class="container">
-                <div class="flat-choose-us">
-                    <div class="row">
-                        <div class="col-md-9 col-sm-9">
-							
-								
-							<div class="ratio ratio-16x9">								
-								   <iframe width="560" height="315" src="https://www.youtube.com/embed/_zmGmha3DxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>								
-							</div>
-							
-							
-                            <div class="flat-accordion">
-                                <div class="name-toggle">
-                                    <h6 class="title mt-3" style="font-size: 17px; color: #555; font-weight: 100;">Duración: 12 trimestres (4 años)</h6>
-                                </div>
-								
-                                <div class="flat-toggle">
-                                    <div class="toggle-title">Objetivo general y específico
-</div>
-                                    
-                                </div><!-- /toggle -->
-                                <div class="flat-toggle">
-                                    <div class="toggle-title">Perfil de ingreso y egreso
-</div>
-                                </div><!-- /.toggle -->
-                               
-                                <div class="flat-toggle">
-                                    <div class="toggle-title">Desarrollo profesional</div>
-                                    <div class="toggle-content">
-                                        <!--div class="info"> 
-											<ul class="list disc">
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Evaluacion_Curricular.pdf" target="_blank">Registro Concurso de Evaluación Curricular</a></li>
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Oposicion.pdf" target="_blank">Registro Concurso de Oposición</a></li>
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Anexo_de_la_solicitud.doc" target="_blank">Anexo de la solicitud</a></li>
-											</ul>
-                                        </div-->
-                                    </div>
-                                </div><!-- /.toggle -->
+                <div class="content-course">
+					<section id="tabs">
+						<div class="container">
+                    		<div class="row">
+								<div class="col-12">
+									<nav>
+										<ul class="nav nav-tabs" id="myTab" role="tablist">
+										  <li class="nav-item" role="presentation">
+											<button class="nav-item nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">Información general</button>
+										  </li>
+										  <li class="nav-item" role="presentation">
+											<button class="nav-link" id="investigaciones-tab" data-bs-toggle="tab" data-bs-target="#investigaciones" type="button" role="tab" aria-controls="investigaciones" aria-selected="false" title="CBI lo prefiere en el menú oscuro">Investigación</button>
+										  </li>
 
-                                <div class="flat-toggle">
-                                    <div class="toggle-title">Planes y programas de estudios</div>                                    
-                                </div><!-- /.toggle -->		
-								<div class="flat-toggle">
-                                    <div class="toggle-title">Titulación</div>                                    
-                                </div><!-- /.toggle -->		
-                               
-                            </div><!-- /.accordion -->
-							
-							
-							
-							
-                        </div><!--/col-md-9 col-sm-9 -->
+										</ul>
+									</nav>
+									<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+					   <div class="content-dropcap v1" style="padding-top: 50px;">							
+							<div class="row">
+								
+							 <div class="col-md-9">
+								<div class="content-dropcap v1">
+									<p>Este Departamento proporcionará una visión de conjunto de la producción agroalimentaria sostenible; fundamentado en la producción agrícola, acuícola y ganadera responsable con el medio ambiente, la diversidad culinaria y la soberanía e inocuidad alimentarias cuya meta será la obtención de bienes nutritivos, saludables y de calidad organoléptica notable.
+									</p>
+								</div>								       
+                       		 </div>
 						
-						<div class="col-md-3">
-                            <div class="sidebar">
-                                <div style="text-align: center; padding-bottom: : 20px;" title="Logotipo: Abstracción de un circuito integrado, la señal inalámbrica y el sistema binario"><img src="images/about/index1/logos/indice6.png"/></div>
+										                              
 
-                               
-								<div class=" border widget widget-text">
-								
-                                <div class=" widget-inner">
-										<h2 class="widget-title maincolor1">CONTACTO</h2>
-										<div class="textwidget">
-											<p><h4>Dra. Karen Samara Miranda Campos</h4><br/><b>Coordinadora de Estudios de Ingeniería en Computación y Telecomunicaciones</b><br/><i class="fa fa-envelope-o"></i> coordinacion_ict@correo.ler.uam.mx<br/><i class="fa fa-phone"></i> +01 (728) 282 7002 Ext. 3005, 3030
-										   </p>
-										</div>	
-									
-									    <div class="textwidget pt-5">
-											<p><h4>Lic. María de la Luz Colín Rosas</h4><br/><b>Coordinadora de Sistemas Escolares</b><br/><i class="fa fa-envelope-o"></i> mcolin@correo.ler.uam.mx<br/><i class="fa fa-phone"></i> +01 (728) 282 7002 Ext. 1700
-										   </p>
-                                    	</div>	
+                        <div class="col-md-3">
+							<div class="col-md-12 col-sm-12 mb-5">
+									<div class="media professor">
+										
+										<img src="images/about/index1/fotos/dAdolfo.jpg" alt="image" class="imagen-encabezado mb-3">
+
+										<div class="media-body">
+											<h4 class="media-heading main-color-2"><a class="main-color-2" href="#">Dr. Adolfo Armando Rayas Amor</a></h4><br/>
+											<span style="font-weight: bold;"> Jefe del Departamento de Ciencias de la Alimentación</span><br/><br/>
+											<span><i class="fa fa-phone"></i>&nbsp;&nbsp;(728) 282-7002 ext.2014</span><br/><span><i class="fa fa-envelope"></i>&nbsp;&nbsp;dcalimentacion@correo.ler.uam.mx</span><br/>
+											<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;a.rayas@correo.ler.uam.mx</span><br/>
+											<a href="#"><span><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Currículum</span></a><br/>
+											<a href="https://business.facebook.com/CBS.LERMA"><span><i class="fa fa-facebook"></i>&nbsp;&nbsp;https://business.facebook.com/CBS.LERMA</span></a>
+										</div>
 									</div>
+							  </div>
+                            <div class="sidebar">
+                                <div class="widget widget-nav-menu">
+                                    <div class=" widget-inner">
+                                        <h2 class="widget-title maincolor2">Enlaces</h2>
+                                        <div class="menu-main-navigation-container">
+											
+                                            <ul id="menu-main-navigation-1" class="menu">
+                                                <li class="menu-item">
+                                                    <a href="oferta_academica.html">Oferta Educativa</a> 													
+                                                </li>												
+												<li class="menu-item">
+													<a href="#">Identidad Divisional</a>
+												</li>												
+												<li class="menu-item">
+													<a href="#">Nuestra Institución</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">Licencias de Software</a>													
+												</li>												
+											</ul>											
+                                        </div>
+                                    </div>
                                 </div>
-                                
-
-                               
                             </div><!-- sidebar -->
-							<!-- /widget-posts -->
-                        </div>
+                        </div><!-- /col-md-3 -->
+						</div>
+														
+					  </div>   
+					</div>
+				  <div class="tab-pane fade" id="investigaciones" role="tabpanel" aria-labelledby="investigaciones-tab">
+					   <div class="row" style="padding-top: 50px;">
+                       		<div class="flat-accordion">                               
+                                <div class="flat-toggle">
+                                    <div class="toggle-title">Información general</div>
+									<div class="toggle-content">El departamento plantea la creación de conocimiento de frontera en las áreas de la ingeniería electrónica y las ciencias computacionales, a través de proyectos de investigación relevantes que sirvan como referencia a nivel nacional e internacional.
+
+    
+ 									</div>
+								</div>	
+								<div class="flat-toggle">
+                                    <div class="toggle-title">Áreas de investigación</div>
+									<div class="toggle-content">
+										<section class="main-content blog-posts">
+											<div class="container">
+												<div class="row">
+													<div class="post-wrap">
+														<div class="col-md-12">
+															<div class="blog-listing">
+																<div class="blog-item">
+																	<div class="post-item blog-post-item">
+																		<div class="row">
+																			<div class="col-md-3 col-sm-12">
+																				<div class="content-pad">
+																					<div class="blog-thumbnail">
+																						<div class="item-thumbnail-gallery">
+																							<div class="item-thumbnail">
+																								 <a href="#">
+																								<img src="images/about/index1/fotos/linea2.JPG" alt="image" style="width: 409px;">
+																								<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																								<div class="thumbnail-hoverlay-cross"></div>
+																								</a>
+																							</div>
+																						</div>            
+																					</div><!--/blog-thumbnail-->																				
+																				</div><!--/blog-thumbnail-->
+																			</div>
+
+																			<div class="col-md-9 col-sm-12">
+																				<div class="content-pad">
+																					<div class="item-content"><h3 class="title">Bienestar animal, ganadería sostenible y calidad del producto</h3>
+																						<div class="item-excerpt blog-item-excerpt">
+																							<p>...</p>
+																						</div>																						
+																					</div>
+																				</div>
+																			</div>
+																		</div><!--/post-item-->
+																	</div>
+																</div><!-- /blog-item -->
+																<div class="blog-item">
+																	<div class="post-item blog-post-item">
+																		<div class="row">
+																			<div class="col-md-3 col-sm-12">
+																				<div class="content-pad">
+																					<div class="blog-thumbnail">
+																						<div class="item-thumbnail-gallery">
+																							<div class="item-thumbnail">
+																								 <a href="#">
+																								<img src="images/about/index1/fotos/linea2.JPG" alt="image" style="width: 409px;">
+																								<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																								<div class="thumbnail-hoverlay-cross"></div>
+																								</a>
+																							</div>
+																						</div>            
+																					</div><!--/blog-thumbnail-->																				
+																				</div><!--/blog-thumbnail-->
+																			</div>
+
+																			<div class="col-md-9 col-sm-12">
+																				<div class="content-pad">
+																					<div class="item-content"><h3 class="title">Biociencia y biotecnología alimentaria</h3>
+																						<div class="item-excerpt blog-item-excerpt">
+																							<p>...</p>
+																						</div>																						
+																					</div>
+																				</div>
+																			</div>
+																		</div><!--/post-item-->
+																	</div>
+																</div><!-- /blog-item -->
+																<div class="blog-item">
+																	<div class="post-item blog-post-item">
+																		<div class="row">
+																			<div class="col-md-3 col-sm-12">
+																				<div class="content-pad">
+																					<div class="blog-thumbnail">
+																						<div class="item-thumbnail-gallery">
+																							<div class="item-thumbnail">
+																								 <a href="#">
+																								<img src="images/about/index1/fotos/linea2.JPG" alt="image" style="width: 409px;">
+																								<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																								<div class="thumbnail-hoverlay-cross"></div>
+																								</a>
+																							</div>
+																						</div>            
+																					</div><!--/blog-thumbnail-->																				
+																				</div><!--/blog-thumbnail-->
+																			</div>
+
+																			<div class="col-md-9 col-sm-12">
+																				<div class="content-pad">
+																					<div class="item-content"><h3 class="title">Agricultura sostenible</h3>
+																						<div class="item-excerpt blog-item-excerpt">
+																							<p>...</p>
+																						</div>																						
+																					</div>
+																				</div>
+																			</div>
+																		</div><!--/post-item-->
+																	</div>
+																</div><!-- /blog-item -->
+
+																
+															</div><!-- /blog-listing -->
+														</div><!-- /col-md-9 -->
+
+
+													</div>
+												</div>
+											</div>
+										</section>
+
+									</div>
+							
+								</div>
+								<div class="flat-toggle">
+                                    <div class="toggle-title">Cuerpos académicos</div>
+									<div class="toggle-content">Por definir información </div>
+								</div>
+								<div class="flat-toggle">
+                                    <div class="toggle-title">Proyectos de investigación</div>
+									<div class="toggle-content">
+										<ul class="list tick">
+											<li>...</li>
+										</ul>
+									</div>
+								</div>
+								<div class="flat-toggle">
+                                    <div class="toggle-title" onClick="location.href='directorio_investigadores_rt.html'">Directorio de investigadores</div>
+									
+								</div>
+							</div>			
+
+						
+					  </div>
+				  </div>			 
+					 
+				</div>
+								</div>
+						
                        
-                    </div>
-                </div>    
+                    		</div>
+						</div>
+					</section>
+                </div>
             </div>
         </section>
-        
+	
 		
-        
 
-        <footer class="footer full-color">           
-		    <section id="bottom">
+        <footer class="footer full-color">
+            <section id="bottom">
                 <div class="section-inner">
                     <div class="container">
                         <div class="row normal-sidebar">
@@ -583,6 +756,7 @@
         </footer>
 
         <!-- Javascript -->
+       
         <script type="text/javascript" src="javascript/jquery.min.js"></script>
         <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.easing.js"></script>
@@ -597,13 +771,43 @@
         
         <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
         <script type="text/javascript" src="javascript/main.js"></script>
-	    <script type="text/javascript">
-			var tab=location.hash;
-			
-			if(tab!=null&&tab!=undefined&&tab!=""){
-			   document.getElementById(tab.substring(1,tab.length)).className+=" active";
-			}
-	    </script>
+       <script type="text/javascript">
+		   document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  // close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {	
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+// DOMContentLoaded  end
+       </script>
+
     </div>
 </body>
 </html>

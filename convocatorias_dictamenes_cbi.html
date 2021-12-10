@@ -5,7 +5,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>DCBI Directorio de Investigadores del Departamento de Recursos de la Tierra (maquetación)</title>
+    <title>Convocatorias y Dictámenes (maquetación)</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -31,40 +31,62 @@
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
     <link href="#" rel="shortcut icon">
-	<style type="text/css">
-		.list-inline{display: block;}
-		 .list-inline li {			
-			display: inline-block;
-			margin-top: 12px;
-			padding: 0 5px;
-		}
-		.alert{
-			color: darkred;
-			margin-bottom: 0;
-			padding: 0;
-		}
-		.warning{
-			 color: goldenrod;
-			margin-bottom: 0;
-			padding: 0;
-		}
-	</style>
-	
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	
+
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
-	
+	<style type="text/css">
+		.border.widget .widget-inner {
+			border: none;   
+		}
+		 .titular {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 17px;
+			line-height: 1.2em;
+			color: #253b80;
+		}
+		.related-course .cr-content .cr-title span, .titular {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 17px;
+				line-height: 1.2em;
+				color: #253b80;
+			}
+			 .related-course .cr-content span
+			{
+				text-transform: none;
+			}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/tabs.css">
+	<style type="text/css">
+		section {
+    padding: 60px 0;
+}
+
+
+
+	button	{
+	height: auto; /* para que se ajusten al texto las pestañas del tab*/
+  
+}
+
+
+#tabs .nav-tabs .nav-link {   
+    font-size: 18px;
+	margin: 20px;
+}
+		
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 
 </head>
 
 <body class="header-sticky">
     
-    <div class="boxed">        
-
-          <div class="header-inner-pages">
+    <div class="boxed">
+       
+      <div class="header-inner-pages">
             <div class="top">
                 <div class="container">
                     <div class="row">
@@ -161,12 +183,13 @@
             </div><!-- Top -->    
         </div><!-- header-inner-pages -->
 
+
         <!-- Header -->
         <header id="header" class="header v2">
             <div class="header-wrap">
                 <div class="container">
                     <div class="header-wrap clearfix">
-						<div id="logo" class="logo">
+                        <div id="logo" class="logo">
                             <a href="index_video.html" rel="home">
                                 <img src="images/logo.png" alt="image">
                             </a>
@@ -187,7 +210,7 @@
                                     </li>
                                 </ul>
                             </div>
-						</div>
+                            </div>
 					</div><!-- /.logo -->
 				</div><!-- /.header-wrap -->
 			</div><!-- /.container-->
@@ -199,14 +222,15 @@
                 <div class="row">
                     <div class="col-md-12">                    
                         <div class="page-title-heading">
-                            <h2 class="title">DCBI Directorio de Investigadores del Departamento de Recursos de la Tierra</h2>
+                            <h2 class="title">DCBI Convocatorias y Dictámenes</h2>
                         </div>                                     
                     </div><!-- /.col-md-12 -->  
                 </div><!-- /.row -->  
             </div><!-- /.container -->                      
         </div><!-- /page-title -->
         
-	  <!--header menú oscuro-->
+	
+       <!--header menú oscuro-->
         <div class="bg-dark bg-gradient">
             <div class="container"> 
 				<div class="row">
@@ -295,349 +319,127 @@
 			</div>
 			</div>
 		<!--/header-->
-
         
-		<section class="flat-row padding-small-v1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-						<span style="color:red;">Los datos mostrados aquí sólo son de ejemplo no reflejan la realidad, se puede incluir filtración por cuerpos académicos cuando se cuente con la información necesaria. La semblanza del investigador se abrirá al hacer click sobre su nombre</span>
-                        <div class="project-listing">
-<!-- Filtro por letra -->							
-                            <ul class="filter-cat v2">
-                                <li class="active"><a data-filter="*" href="#">Todos</a></li>
-                                <li><a data-filter=".a" href="#">A</a></li>
-                                <li><a data-filter=".b" href="#">B</a></li>
-                                <li><a data-filter=".c" href="#">C</a></li>a
-                                <li><a data-filter=".d" href="#">D</a></li>
-                                <li><a data-filter=".e" href="#">E</a></li>
-                                <li><a data-filter=".f" href="#">F</a></li>
-                                <li><a data-filter=".g" href="#">G</a></li>
-                                <li><a data-filter=".h" href="#">H</a></li>
-                                <li><a data-filter=".i" href="#">I</a></li>
-                                <li><a data-filter=".j" href="#">J</a></li>
-                                <li><a data-filter=".k" href="#">K</a></li>
-                                <li><a data-filter=".l" href="#">L</a></li>
-                                <li><a data-filter=".m" href="#">M</a></li>
-                                <li><a data-filter=".n" href="#">N</a></li>
-                                <li><a data-filter=".o" href="#">O</a></li>
-                                <li><a data-filter=".p" href="#">P</a></li>
-                                <li><a data-filter=".q" href="#">Q</a></li>
-                                <li><a data-filter=".r" href="#">R</a></li>
-                                <li><a data-filter=".s" href="#">S</a></li>
-                                <li><a data-filter=".t" href="#">T</a></li>
-                                <li><a data-filter=".u" href="#">U</a></li>
-                                <li><a data-filter=".v" href="#">V</a></li>
-                                <li><a data-filter=".w" href="#">W</a></li>
-                                <li><a data-filter=".x" href="#">X</a></li>
-                                <li><a data-filter=".y" href="#">Y</a></li>
-                                <li><a data-filter=".z" href="#">Z</a></li>
-							</ul>
-<!-- Filtro por área -->							
-							<ul class="filter-cat v2">
-								<li><a data-filter=".arh" href="#" style="white-space: nowrap;">Aprovechamiento de Recursos Hídricos</a></li>
-								<li><a data-filter=".tdtc" href="#" style="white-space: nowrap;">Transporte, Destino y Tratamiento de Contaminantes </a></li>								
-                            </ul>
-<!-- Filtro por proyecto -->							
-							<ul class="filter-cat v2">
-								<li><a data-filter=".pa" href="#" style="white-space: nowrap;">Proyecto A</a></li>
-								<li><a data-filter=".pb" href="#" style="white-space: nowrap;">Proyecto B</a></li>
-								<li><a data-filter=".pc" href="#" style="white-space: nowrap;">Proyecto C</a></li>
-                            </ul>							
 
-<!--Sección Departamento de Recursos de la Tierra-->
-                            <div class="project-portfolio v1" style="display: flex;">
-								<!--encabezado-->
-								<div class="fa-2x-title item arh pa pb h d s r b overflow-visible" style="white-space: nowrap;">Aprovechamiento de Recursos Hídricos</div>
-								<div class="fa-2x-title item arh pa pb h d s r b">&nbsp;</div>
-								<div class="fa-2x-title item arh pa pb h d s r b">&nbsp;</div>
-								<div class="fa-2x-title item arh pa pb h d s r b">&nbsp;</div>
-								<div class="fa-2x-title item arh pa pb h d s r b">&nbsp;</div>
-								<!-- DRT -->
-								<div class="item h arh pa">
-                                   <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
+        <section id="tabs">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-12">
+				<nav>
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+					  <li class="nav-item" role="presentation">
+						<button class="nav-item nav-link active" id="tablero-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tablero Divisional</button>
+					  </li>
+					  <li class="nav-item" role="presentation">
+						<button class="nav-link" id="admision-tab" data-bs-toggle="tab" data-bs-target="#conacyt" type="button" role="tab" aria-controls="conacyt" aria-selected="false">Admisión y promoción</button>
+					  </li>
+					 
+					</ul>
+				</nav>
+				<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tablero-tab">
+					   <div class="content-dropcap v1" style="padding-top: 50px;">							
 
-                                        <div class="item-content">
+							Información pendiente
 
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dr. Ernesto Hernández Zapata</a><br/> &nbsp;
-                                            </h3>
-                                            <h4 class="small-text">Profesor Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/>  e.hernandez@correo.ler.uam.mx</p>
-											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>									 
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-								<div class="item d arh pa">
-                                    <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
+														
+					  </div>   
+					</div>
+				  <div class="tab-pane fade" id="conacyt" role="tabpanel" aria-labelledby="admision-tab">
+					   <div class="row" style="padding-top: 50px;">
+                        <div class="col-md-12">
+							 <div class="flat-accordion">
+                                <div class="name-toggle">
+                                    <h2 class="title">Admisión y promoción de personal académico</h2>
+                                </div>
+                                <div class="flat-toggle">
+                                    <div class="toggle-title" onClick="location.href='https://www.uam.mx/convoper/convoacad/index.html'">Convocatorias de Ingreso</div>
+                                    
+                                </div><!-- /toggle -->
+                                <div class="flat-toggle">
+                                    <div class="toggle-title" onClick="location.href='http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Guia_de_documentos_para_concurso.pdf'">Guía rápida de documentos para concursos</div>
+                                </div><!-- /.toggle -->
+                                <div class="flat-toggle">
+                                    <div class="toggle-title" onClick="location.href='http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Requisitos_para_concurso.pdf'">Requisitos para concursos</div>                                    
+                                </div><!-- /.toggle -->
+                                <div class="flat-toggle">
+                                    <div class="toggle-title">Formatos</div>
+                                    <div class="toggle-content">
+                                        <div class="info"> 
+											<ul class="list disc">
+												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Evaluacion_Curricular.pdf" target="_blank">Registro Concurso de Evaluación Curricular</a></li>
+												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Oposicion.pdf" target="_blank">Registro Concurso de Oposición</a></li>
+												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Anexo_de_la_solicitud.doc" target="_blank">Anexo de la solicitud</a></li>
+											</ul>
+                                        </div>
+                                    </div>
+                                </div><!-- /.toggle -->
 
-                                        <div class="item-content">
-
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dra. Eloísa Domínguez Mariani</a> <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="right" title="Se encuentra en periodo sabático"><i class="fa fa-warning alert"></i></a><br/> &nbsp;
-                                            </h3>
-                                            <h4 class="small-text">Profesora Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/>e.dominguez@correo.ler.uam.mx</p>
-											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>									 
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-								<div class="item s arh pa pb">
-                                   <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
-
-                                        <div class="item-content">
-
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dr. José Luis Salazar Laureles</a><br/> &nbsp;
-                                            </h3>
-                                            <h4 class="small-text">Profesor Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/> j.salazar@correo.ler.uam.mx</p>
-											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>									 
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-								<div class="item r arh pb">
-                                    <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
-
-                                        <div class="item-content">
-
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dr. Lázaro Raymundo Reyes Gutiérrez</a> <a href="javascript:void(0)" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="right" title="Se encuentra en periodo sabático"><i class="fa fa-warning alert"></i></a>
-                                            </h3>
-                                            <h4 class="small-text">Profesor Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/> l.reyes@correo.ler.uam.mx</p>											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>	
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-								<div class="item b arh pb">
-                                    <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
-
-                                        <div class="item-content">
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dr. Ricardo Beristain Cardoso</a><br/> &nbsp;
-                                            </h3>
-                                           <h4 class="small-text">Profesor Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/> r.beristain@correo.ler.uam.mx</p>
-											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>									 
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-							</div>
-							 <div class="project-portfolio v1" style="display: flex;">
-								<!--encabezado-->
-								<div class="fa-2x-title item tdtc pb pc l s b m j overflow-visible" style="white-space: nowrap;">Transporte, Destino y Tratamiento de Contaminantes</div>
-								<div class="fa-2x-title item tdtc pb pc l s b m j">&nbsp;</div>
-								<div class="fa-2x-title item tdtc pb pc l s b m j">&nbsp;</div>
-								<div class="fa-2x-title item tdtc pb pc l s b m j">&nbsp;</div>
-								<div class="fa-2x-title item tdtc pb pc l s b m j">&nbsp;</div>
-								<div class="item b tdtc pb pc">
-                                    <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
-
-                                        <div class="item-content">
-
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dra. Anne Laure Sabine Bussy Beaurain</a>
-                                            </h3>
-                                            <h4 class="small-text">Profesora Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/> a.sabine@correo.ler.uam.mx</p>
-											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>									 
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-								<div class="item l tdtc pb">
-                                    <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
-
-                                        <div class="item-content">
-
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dr. Edgar López Galván</a><br/> &nbsp;
-                                            </h3>
-                                            <h4 class="small-text">Profesor Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/> e.lopez@correo.ler.uam.mx</p>
-											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>									 
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-								<div class="item j tdtc pb">
-                                    <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
-
-                                        <div class="item-content">
-
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dr. Héctor Eduardo Jardón Valadez</a>
-                                            </h3>
-                                            <h4 class="small-text">Profesor Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/> h.jardon@correo.ler.uam.mx</p>
-											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>									 
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-								<div class="item m tdtc pc">
-                                    <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
-
-                                        <div class="item-content">
-
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dr. Alejandro Mendoza Reséndiz</a><br/> &nbsp;
-                                            </h3>
-                                            <h4 class="small-text">Profesor Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/> a.mendoza@correo.ler.uam.mx</p>
-											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>									 
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-								<div class="item s tdtc pb pc">
-                                    <div class="thumb-item">
-                                        <div class="item-thumbnail">
-                                            <a href="member-single.html"><img src="images/member/foto.jpg" alt="image"></a>
-                                        </div><!-- /item-thumbnail -->
-
-                                        <div class="item-content">
-
-                                            <h3 class="item-title">
-                                                <a href="member-single.html">Dr. Gabriel Soto Cortés</a><br/> &nbsp;
-                                            </h3>
-                                            <h4 class="small-text">Profesor Titular <br/> &nbsp;&nbsp;&nbsp;</h4>
-                                            <p><b>Teléfono:</b><br/> (728) 282-7002 ext. 3400</p>
-											 <p><b>Email:</b><br/> gsoto@correo.ler.uam.mx</p>
-											
-											 <ul class="list-inline social-light">
-												<li><a class="btn btn-default social-icon" href="#"><i>CV</i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a class="btn btn-default social-icon" href="#"><i class="fa fa-youtube"></i></a></li>									 
-                                            </ul>										
-											
-                                             
-                                        </div><!-- /item-content -->
-                                    </div><!-- /thumb-item -->
-                                </div><!-- /item -->
-								
-                            </div>
-							
-							          
-                        </div>
-                    </div><!-- /col-md-9 -->
-
+                                <div class="flat-toggle">
+                                    <div class="toggle-title" onClick="location.href='http://www.uam.mx/academia/dictaminadoras/index.html'">Criterios de dictaminación</div>                                    
+                                </div><!-- /.toggle -->						
+                               
+                            </div><!-- /.accordion -->
+                        </div><!--/col-md-6 col-sm-6 -->
 						
-                </div>
-            </div>
-        </section>
+						
+					  </div>
+				  </div>			 
+					 
+				</div>
+			</div>
+			
+			 <div class="col-md-12">
+                                        <div class="content-pad single-course-detail">
+                                            <div class="course-detail" style="border-top: 0px;">    
+                                                <div class="content-content">		
+                                                    <div class="related-course">
+                                                        <h3>Contacto</h3>
+                                                        <div class="cr-content">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-sm-6 related-item">
+                                                                   
+                                                                    <div class="cr-title ">
+                                                                        <span class="related-cr-title main-color-1-hover">Dr. Edgar López Galván</span>
+                                                                    </div>
+                                                                    <div class="cr-start small-text v1">													 
+																		<span style="font-weight: bold;">Director de División</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 (728) 282 7002 Ext. 3005, 3030</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;e.lopez@correo.ler.uam.mx</span>
+																	</div>
+                                                                    <div class="clear"></div>
+                                                                </div>
+    
+                                                                 <div class="col-md-6 col-sm-6 related-item">
+                                                                   
+                                                                    <div class="cr-title ">
+                                                                        <span class="related-cr-title main-color-1-hover">Dr. Carlos Eduardo Díaz Gutiérrez </span>
+                                                                    </div>
+                                                                    <div class="cr-start small-text v1">													 
+																		<span style="font-weight: bold;">Secretario Académico</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 (728) 282 7002 Ext. 3005, 3030</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;c.diaz@correo.ler.uam.mx</span>
+																	</div>
+                                                                    <div class="clear"></div>
+                                                                </div>
+                                                            </div>
+                                                       </div>
+                                                    </div>                                 
+                                                </div><!--/content-content-->
+                                            </div><!--/course-detail-->
+                                        </div><!--/single-content-detail-->         
+                                    </div>
+		</div>
+	</div>
+</section>
+
         <footer class="footer full-color">
-            <section id="bottom">
+           
+		 <section id="bottom">
                 <div class="section-inner">
                     <div class="container">
                         <div class="row normal-sidebar">
-							
-							
 						<div class="widget widget-text">
                                 <div class="row">
                                     <div class="col-md-2">
@@ -823,28 +625,75 @@
 
         <!-- Javascript -->
         <script type="text/javascript" src="javascript/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/bootstrap.bundle.js"></script>
+        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.easing.js"></script>
         
         <script type="text/javascript" src="javascript/owl.carousel.js"></script>
         <script type="text/javascript" src="javascript/parallax.js"></script>
+        <script type="text/javascript" src="javascript/jquery.fancybox.js"></script>
         <script type="text/javascript" src="javascript/jquery.tweet.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.matchHeight-min.js"></script>
         <script type="text/javascript" src="javascript/jquery-validate.js"></script> 
-        <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-        <script type="text/javascript" src="javascript/jquery-waypoints.js"></script> 
-        <script type="text/javascript" src="javascript/jquery.isotope.min.js"></script> 
-        <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
         
         <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
-        <script type="text/javascript" src="javascript/main.js"></script>  
-		<script type="text/javascript">
-				var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-				var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-				  return new bootstrap.Tooltip(tooltipTriggerEl)
-				})
-		</script>
+        <script type="text/javascript" src="javascript/main.js"></script>
+		<script>
+			function sortTable(n, idTabla) {
+			  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+			  table = document.getElementById(idTabla);
+			  switching = true;
+			  //Set the sorting direction to ascending:
+			  dir = "asc"; 
+			  /*Make a loop that will continue until
+			  no switching has been done:*/
+			  while (switching) {
+				//start by saying: no switching is done:
+				switching = false;
+				rows = table.rows;
+				/*Loop through all table rows (except the
+				first, which contains table headers):*/
+				for (i = 1; i < (rows.length - 1); i++) {
+				  //start by saying there should be no switching:
+				  shouldSwitch = false;
+				  /*Get the two elements you want to compare,
+				  one from current row and one from the next:*/
+				  x = rows[i].getElementsByTagName("TD")[n];
+				  y = rows[i + 1].getElementsByTagName("TD")[n];
+				  /*check if the two rows should switch place,
+				  based on the direction, asc or desc:*/
+				  if (dir == "asc") {
+					if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+					  //if so, mark as a switch and break the loop:
+					  shouldSwitch= true;
+					  break;
+					}
+				  } else if (dir == "desc") {
+					if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+					  //if so, mark as a switch and break the loop:
+					  shouldSwitch = true;
+					  break;
+					}
+				  }
+				}
+				if (shouldSwitch) {
+				  /*If a switch has been marked, make the switch
+				  and mark that a switch has been done:*/
+				  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+				  switching = true;
+				  //Each time a switch is done, increase this count by 1:
+				  switchcount ++;      
+				} else {
+				  /*If no switching has been done AND the direction is "asc",
+				  set the direction to "desc" and run the while loop again.*/
+				  if (switchcount == 0 && dir == "asc") {
+					dir = "desc";
+					switching = true;
+				  }
+				}
+			  }
+			}
+			</script>
     </div>
 </body>
-	
 </html>
