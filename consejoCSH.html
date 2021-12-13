@@ -5,7 +5,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Convocatorias y Dictámenes (maquetación)</title>
+    <title>Consejo (maquetación)</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -19,34 +19,35 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">	
+	
     
     <!-- Colors -->
     <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
     
     <!-- Animation Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/settings.css">
 
     <!-- Favicon and touch icons  -->
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
     <link href="#" rel="shortcut icon">
-
-    <!--[if lt IE 9]>
-        <script src="javascript/html5shiv.js"></script>
-        <script src="javascript/respond.min.js"></script>
-    <![endif]-->
+	<!--Estilos para datos de director y contactos-->
 	<style type="text/css">
-		.border.widget .widget-inner {
-			border: none;   
+	
+		.professor .media-body span, .professor .media-body span i, .testimonial-item .media-body {
+			font-size:14px;
+			text-transform: none;
 		}
-		 .titular {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 17px;
-			line-height: 1.2em;
-			color: #253b80;
-		}
-		.related-course .cr-content .cr-title span, .titular {
+		.professor .media-body a{font-size:24px;}
+			.imagen-encabezado{ border-radius: 35%;
+			margin-right: 50px;}
+			.event-more-detail p a{color: #253b80;}
+			.single-course-detail .content-content .event-more-detail {   
+				border-bottom: none;
+			}
+			.related-course .cr-content .cr-title span, .titular {
 				font-family: 'Open Sans', sans-serif;
 				font-size: 17px;
 				line-height: 1.2em;
@@ -55,38 +56,38 @@
 			 .related-course .cr-content span
 			{
 				text-transform: none;
-			}
+			}		
 	</style>
-	<link rel="stylesheet" type="text/css" href="css/tabs.css">
+	<!-- Estilos para carrusel -->
 	<style type="text/css">
-		section {
-    padding: 60px 0;
-}
-
-
-
-	button	{
-	height: auto; /* para que se ajusten al texto las pestañas del tab*/
-  
-}
-
-
-#tabs .nav-tabs .nav-link {   
-    font-size: 18px;
-	margin: 20px;
-}
-		
-
+		.page-title.parallax4 {
+			padding: 25px 0 ;
+		}
+		h6{font-weight: bold;}
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+	<script type="text/javascript">
+		function addRemoveClass(elemento){
+			
+			if(elemento.lastElementChild.className.indexOf("show_sub_menu") == -1)
+			    elemento.lastElementChild.className+=" show_sub_menu";
+			else
+				elemento.lastElementChild.className="sub-menu"
+		}
+	</script>
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <body class="header-sticky">
     
-    <div class="boxed">
-       
-      <div class="header-inner-pages">
+    <div class="boxed">       
+         <div class="header-inner-pages">
             <div class="top">
                 <div class="container">
                     <div class="row">
@@ -183,7 +184,6 @@
             </div><!-- Top -->    
         </div><!-- header-inner-pages -->
 
-
         <!-- Header -->
         <header id="header" class="header v2">
             <div class="header-wrap">
@@ -211,26 +211,24 @@
                                 </ul>
                             </div>
                             </div>
-					</div><!-- /.logo -->
-				</div><!-- /.header-wrap -->
-			</div><!-- /.container-->
-		<!--/div--><!-- /.header-wrap-->
+                    </div><!-- /.logo -->
+                </div><!-- /.header-wrap -->
+            </div><!-- /.container-->
+            <!--/div--><!-- /.header-wrap-->
         </header><!-- /.header -->
-        
-		<div class="page-title full-color">
+ 		<div class="page-title full-color">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">                    
                         <div class="page-title-heading">
-                            <h2 class="title">DCSH Convocatorias y Dictámenes</h2>
-                        </div>                                     
+                            <h2 class="title">DCSH Consejo Divisional</h2>
+                        </div>                                    
                     </div><!-- /.col-md-12 -->  
                 </div><!-- /.row -->  
             </div><!-- /.container -->                      
         </div><!-- /page-title -->
-        
-	
-      <!--header menú oscuro-->
+		
+       <!--header menú oscuro-->
         <div class="bg-dark bg-gradient">
             <div class="container"> 
 				<div class="row">
@@ -308,80 +306,55 @@
 			</div>
 			</div>
 		<!--/header-->
-        
 
-        <section id="tabs">
-	<div class="container">
-		
-		<div class="row">
-			<div class="col-12">
-				<nav>
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-					  <li class="nav-item" role="presentation">
-						<button class="nav-item nav-link active" id="tablero-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tablero Divisional</button>
-					  </li>
-					  <li class="nav-item" role="presentation">
-						<button class="nav-link" id="admision-tab" data-bs-toggle="tab" data-bs-target="#conacyt" type="button" role="tab" aria-controls="conacyt" aria-selected="false">Admisión y promoción</button>
-					  </li>
-					 
-					</ul>
-				</nav>
-				<div class="tab-content" id="myTabContent">
-				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tablero-tab">
-					   <div class="content-dropcap v1" style="padding-top: 50px;">							
+       <section class="main-content course-single">
+            <div class="container">
+                <div class="content-course">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <article class="post-course">
+                                <div class="row">                                  
 
-							Información pendiente
-
-														
-					  </div>   
-					</div>
-				  <div class="tab-pane fade" id="conacyt" role="tabpanel" aria-labelledby="admision-tab">
-					   <div class="row" style="padding-top: 50px;">
-                        <div class="col-md-12">
-							 <div class="flat-accordion">
-                                <div class="name-toggle">
-                                    <h2 class="title">Admisión y promoción de personal académico</h2>
-                                </div>
-                                <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='https://www.uam.mx/convoper/convoacad/index.html'">Convocatorias de Ingreso</div>
-                                    
-                                </div><!-- /toggle -->
-                               
-                                <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Requisitos_para_concurso.pdf'">Requisitos para concursos</div>                                    
-                                </div><!-- /.toggle -->
-                                <div class="flat-toggle">
-                                    <div class="toggle-title">Formatos</div>
-                                    <div class="toggle-content">
-                                        <div class="info"> 
-											<ul class="list disc">
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Evaluacion_Curricular.pdf" target="_blank">Registro Concurso de Evaluación Curricular</a></li>
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Oposicion.pdf" target="_blank">Registro Concurso de Oposición</a></li>
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Anexo_de_la_solicitud.doc" target="_blank">Anexo de la solicitud</a></li>
-											</ul>
-                                        </div>
-                                    </div>
-                                </div><!-- /.toggle -->
-
-                                <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='http://www.uam.mx/academia/dictaminadoras/index.html'">Criterios de dictaminación</div>                                    
-                                </div><!-- /.toggle -->						
-                               
-                            </div><!-- /.accordion -->
-                        </div><!--/col-md-6 col-sm-6 -->
-						
-						
-					  </div>
-				  </div>			 
-					 
-				</div>
-			</div>
-			
-			 
-			 						<div class="col-md-12">
+                                    <div class="col-md-12">
                                         <div class="content-pad single-course-detail">
-                                            <div class="course-detail" style="border-top: 0px;">    
-                                                <div class="content-content">		
+                                            <div class="course-detail pt-0">                                            
+											
+                                                <div class="content-content mt-0 pt-0" style="border-top: 0px;">
+                                                    <div class="event-more-detail"  style="border-top: 0px;">
+                                                        <h4>¿Qué es el Consejo Divisional?</h4>
+                                                        <p>
+														Es el órgano colegiado de la División.</p>
+														
+														<h4>Integración. </h4>
+														<ul>
+															<li><i class="fa fa-check"></i> El Director de la División (Presidente del Consejo).</li>
+															<li><i class="fa fa-check"></i> Los Jefes de Departamento.</li>
+															<li><i class="fa fa-check"></i> Representantes del personal académico y representantes de los alumnos.</li>
+														</ul>
+                                                        <br/>
+                                                        <h4>Facultades</h4>														
+														<p>
+															<ul>
+																<li><i class="fa fa-check"></i> Designar a los Jefes de Departamento de las ternas que le envía el Rector de la Unidad. Aprobar los proyectos de investigación y el anteproyecto de presupuesto de División.</li> 
+																<li><i class="fa fa-check"></i> Aprobar las solicitudes de periodo sabático de los profesores y evaluar los informes correspondientes.</li>
+																<li><i class="fa fa-check"></i> Evaluar los informes académicos que a propósito del ejercicio del derecho mencionado en la fracción anterior, deben rendir los miembros del personal académico.</li>
+																<li><i class="fa fa-check"></i> Aprobar los proyectos de investigación de la División, o la parte correspondiente de los proyectos interdivisionales, y promover el apoyo presupuestal que se requiera.</li>
+																<li><i class="fa fa-check"></i> Determinar los cupos de nuevo ingreso de las licenciaturas.</li>
+																<li><i class="fa fa-check"></i> Promover proyectos de investigación interdisciplinaria en cada Departamento, entre sus departamentos y con departamentos de otras divisiones.</li>
+																<li><i class="fa fa-check"></i> Aprobar anualmente la programación docente mínima. Emitir lineamientos para el desarrollo y funcionamiento de la División.</li>
+																<li><i class="fa fa-check"></i> Proponer la creación o supresión de áreas de investigación.Determinar y modificar el perfil y estructura de la planta académica de la División.</li>
+																<li><i class="fa fa-check"></i> Aprobar la contratación de profesores visitantes.</li>
+																<li><i class="fa fa-check"></i> Aprobar anualmente el otorgamiento de la Beca al Reconocimiento de la Carrera Docente del Personal Académico a profesores que la solicitan.</li>
+																<li><i class="fa fa-check"></i> Rendir por escrito informes anuales del desarrollo y funcionamiento de la División, ante el Rector de Unidad.</li>
+																<li><i class="fa fa-check"></i> Evaluar anualmente los resultados del desarrollo de los planes y programas académicos de la División.</li>
+																<li><i class="fa fa-check"></i> Aprobar la creación, promoción, apoyo, modificación o supresión de líneas editoriales de la División respectiva.</li>
+																<li><i class="fa fa-check"></i> Ratificar a los integrantes de los consejos y comités editoriales propuestos por los directores de división.</li>
+																<li><i class="fa fa-check"></i> Formular los planes y programas de estudio y aprobar sus actualizaciones.</li>
+																<li><i class="fa fa-check"></i> Aprobar solicitudes de revalidación y establecimiento de equivalencias de alumnos que estudiaron en otras instituciones.</li>
+																<li><i class="fa fa-check"></i> Es el único órgano que puede aplicar medidas administrativas a los alumnos de la División que cometen faltas.</li>
+																<li><i class="fa fa-check"></i> Aprobar prórrogas para alumnos que no completaron sus créditos en el periodo reglamentario.</li>
+															</ul></p>
+													</div>
                                                     <div class="related-course">
                                                         <h3>Contacto</h3>
                                                         <div class="cr-content">
@@ -389,28 +362,18 @@
                                                                 <div class="col-md-6 col-sm-6 related-item">
                                                                    
                                                                     <div class="cr-title ">
-                                                                        <span class="related-cr-title main-color-1-hover">Dra. Mónica Francisca Benítez Dávila</span>
+                                                                        <span class="related-cr-title main-color-1-hover">Mtra. Gloria Yuritzia García Rodríguez</span>
                                                                     </div>
                                                                     <div class="cr-start small-text v1">													 
-																		<span style="font-weight: bold;">Directora de la División de Ciencias Sociales y Humanidades</span><br/>
-																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;(728) 282-7002 ext. 1008, 4003</span><br/>
-																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;divisioncsh@correo.ler.uam.mx</span>
+																		<span style="font-weight: bold;">Jefa de la Oficina Técnica de Consejo Divisional de Ciencias Sociales y Humanidades</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;(728) 282-7002 ext. 4055</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;ggarcia@correo.ler.uam.mx</span><br/>
+																		<span><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;<a href="https://www.facebook.com/CSH.UAM.L/"><span>&nbsp;&nbsp;https://www.facebook.com/CSH.UAM.L/</span></a></span>
 																	</div>
                                                                     <div class="clear"></div>
                                                                 </div>
     
-                                                                 <div class="col-md-6 col-sm-6 related-item">
-                                                                   
-                                                                    <div class="cr-title ">
-                                                                        <span class="related-cr-title main-color-1-hover">Dr. Oscar Enrique Hernández Razo</span>
-                                                                    </div>
-                                                                    <div class="cr-start small-text v1">													 
-																		<span style="font-weight: bold;">Secretario Académico de la División de Ciencias Sociales y Humanidades</span><br/>
-																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;(728) 282-7002 ext. 1016, 4400</span><br/>
-																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;secretariacsh@correo.ler.uam.mx</span>
-																	</div>
-                                                                    <div class="clear"></div>
-                                                                </div>
+                                                                
                                                             </div>
                                                        </div>
                                                     </div>                                 
@@ -418,16 +381,47 @@
                                             </div><!--/course-detail-->
                                         </div><!--/single-content-detail-->         
                                     </div>
-		</div>
-	</div>
-</section>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="sidebar">
+                               
+
+                                <div class="widget widget-nav-menu">
+                                    <div class=" widget-inner">
+                                        <h2 class="widget-title maincolor2">Ligas de interés</h2>
+                                        <div class="menu-main-navigation-container">
+                                            <ul id="menu-main-navigation-2" class="menu">
+                                                <li class="menu-item">
+                                                    <a href="#">Documentos Aprobados</a> 													
+                                                </li>											
+												
+												<li class="menu-item">
+													<a href="http://www.uam.mx/legislacion/index.html">Legislación Universitaria</a>
+												</li>																								
+											</ul>											
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!-- sidebar -->
+                        </div><!-- /col-md-3 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+	
+		
 
         <footer class="footer full-color">
-           
-		 <section id="bottom">
+            <section id="bottom">
                 <div class="section-inner">
                     <div class="container">
                         <div class="row normal-sidebar">
+							
+							
 						<div class="widget widget-text">
                                 <div class="row">
                                     <div class="col-md-2">
@@ -612,6 +606,7 @@
         </footer>
 
         <!-- Javascript -->
+       
         <script type="text/javascript" src="javascript/jquery.min.js"></script>
         <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.easing.js"></script>
@@ -626,62 +621,43 @@
         
         <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
         <script type="text/javascript" src="javascript/main.js"></script>
-		<script>
-			function sortTable(n, idTabla) {
-			  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-			  table = document.getElementById(idTabla);
-			  switching = true;
-			  //Set the sorting direction to ascending:
-			  dir = "asc"; 
-			  /*Make a loop that will continue until
-			  no switching has been done:*/
-			  while (switching) {
-				//start by saying: no switching is done:
-				switching = false;
-				rows = table.rows;
-				/*Loop through all table rows (except the
-				first, which contains table headers):*/
-				for (i = 1; i < (rows.length - 1); i++) {
-				  //start by saying there should be no switching:
-				  shouldSwitch = false;
-				  /*Get the two elements you want to compare,
-				  one from current row and one from the next:*/
-				  x = rows[i].getElementsByTagName("TD")[n];
-				  y = rows[i + 1].getElementsByTagName("TD")[n];
-				  /*check if the two rows should switch place,
-				  based on the direction, asc or desc:*/
-				  if (dir == "asc") {
-					if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-					  //if so, mark as a switch and break the loop:
-					  shouldSwitch= true;
-					  break;
-					}
-				  } else if (dir == "desc") {
-					if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-					  //if so, mark as a switch and break the loop:
-					  shouldSwitch = true;
-					  break;
-					}
-				  }
-				}
-				if (shouldSwitch) {
-				  /*If a switch has been marked, make the switch
-				  and mark that a switch has been done:*/
-				  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-				  switching = true;
-				  //Each time a switch is done, increase this count by 1:
-				  switchcount ++;      
-				} else {
-				  /*If no switching has been done AND the direction is "asc",
-				  set the direction to "desc" and run the while loop again.*/
-				  if (switchcount == 0 && dir == "asc") {
-					dir = "desc";
-					switching = true;
-				  }
-				}
-			  }
-			}
-			</script>
+       <script type="text/javascript">
+		   document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  // close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {	
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+// DOMContentLoaded  end
+       </script>
+
     </div>
 </body>
 </html>

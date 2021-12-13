@@ -5,7 +5,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Convocatorias y Dictámenes (maquetación)</title>
+    <title>Depto. de Procesos Sociales (maquetación)</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -19,34 +19,35 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">	
+	
     
     <!-- Colors -->
     <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
     
     <!-- Animation Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/settings.css">
 
     <!-- Favicon and touch icons  -->
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
     <link href="#" rel="shortcut icon">
-
-    <!--[if lt IE 9]>
-        <script src="javascript/html5shiv.js"></script>
-        <script src="javascript/respond.min.js"></script>
-    <![endif]-->
+	<!--Estilos para datos de director y contactos-->
 	<style type="text/css">
-		.border.widget .widget-inner {
-			border: none;   
+	
+		.professor .media-body span, .professor .media-body span i, .testimonial-item .media-body {
+			font-size:14px;
+			text-transform: none;
 		}
-		 .titular {
-			font-family: 'Open Sans', sans-serif;
-			font-size: 17px;
-			line-height: 1.2em;
-			color: #253b80;
-		}
-		.related-course .cr-content .cr-title span, .titular {
+		.professor .media-body a{font-size:24px;}
+			.imagen-encabezado{ border-radius: 35%;
+			margin-right: 50px;}
+			.event-more-detail p a{color: #253b80;}
+			.single-course-detail .content-content .event-more-detail {   
+				border-bottom: none;
+			}
+			.related-course .cr-content .cr-title span, .titular {
 				font-family: 'Open Sans', sans-serif;
 				font-size: 17px;
 				line-height: 1.2em;
@@ -55,8 +56,31 @@
 			 .related-course .cr-content span
 			{
 				text-transform: none;
-			}
+			}		
 	</style>
+	<!-- Estilos para carrusel -->
+	<style type="text/css">
+		.page-title.parallax4 {
+			padding: 25px 0 ;
+		}
+		h6{font-weight: bold;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+	<script type="text/javascript">
+		function addRemoveClass(elemento){
+			
+			if(elemento.lastElementChild.className.indexOf("show_sub_menu") == -1)
+			    elemento.lastElementChild.className+=" show_sub_menu";
+			else
+				elemento.lastElementChild.className="sub-menu"
+		}
+	</script>
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/tabs.css">
 	<style type="text/css">
 		section {
@@ -78,15 +102,13 @@
 		
 
 	</style>
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
 
 </head>
 
 <body class="header-sticky">
     
     <div class="boxed">
-       
-      <div class="header-inner-pages">
+		<div class="header-inner-pages">
             <div class="top">
                 <div class="container">
                     <div class="row">
@@ -183,7 +205,6 @@
             </div><!-- Top -->    
         </div><!-- header-inner-pages -->
 
-
         <!-- Header -->
         <header id="header" class="header v2">
             <div class="header-wrap">
@@ -210,27 +231,25 @@
                                     </li>
                                 </ul>
                             </div>
-                            </div>
+						</div>
 					</div><!-- /.logo -->
 				</div><!-- /.header-wrap -->
 			</div><!-- /.container-->
-		<!--/div--><!-- /.header-wrap-->
+            <!--/div--><!-- /.header-wrap-->
         </header><!-- /.header -->
-        
-		<div class="page-title full-color">
+ 		<div class="page-title full-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">                    
-                        <div class="page-title-heading">
-                            <h2 class="title">DCSH Convocatorias y Dictámenes</h2>
-                        </div>                                     
+                    <div class="page-title-heading col-md-12">	
+						
+						<h2 class="title pt-4">Departamento de Procesos Sociales</h2>
+							
                     </div><!-- /.col-md-12 -->  
                 </div><!-- /.row -->  
             </div><!-- /.container -->                      
         </div><!-- /page-title -->
-        
-	
-      <!--header menú oscuro-->
+		
+       <!--header menú oscuro-->
         <div class="bg-dark bg-gradient">
             <div class="container"> 
 				<div class="row">
@@ -308,93 +327,207 @@
 			</div>
 			</div>
 		<!--/header-->
-        
 
-        <section id="tabs">
-	<div class="container">
-		
-		<div class="row">
-			<div class="col-12">
-				<nav>
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-					  <li class="nav-item" role="presentation">
-						<button class="nav-item nav-link active" id="tablero-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Tablero Divisional</button>
-					  </li>
-					  <li class="nav-item" role="presentation">
-						<button class="nav-link" id="admision-tab" data-bs-toggle="tab" data-bs-target="#conacyt" type="button" role="tab" aria-controls="conacyt" aria-selected="false">Admisión y promoción</button>
-					  </li>
-					 
-					</ul>
-				</nav>
-				<div class="tab-content" id="myTabContent">
-				  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="tablero-tab">
+       <section class="main-content course-single">
+            <div class="container">
+                <div class="content-course">
+					<section id="tabs">
+						<div class="container">
+                    		<div class="row">
+								<div class="col-12">
+									<nav>
+										<ul class="nav nav-tabs" id="myTab" role="tablist">
+										  <li class="nav-item" role="presentation">
+											<button class="nav-item nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="true">Información general</button>
+										  </li>
+										  <li class="nav-item" role="presentation">
+											<button class="nav-link" id="investigaciones-tab" data-bs-toggle="tab" data-bs-target="#investigaciones" type="button" role="tab" aria-controls="investigaciones" aria-selected="false" title="CBI lo prefiere en el menú oscuro">Investigación</button>
+										  </li>
+
+										</ul>
+									</nav>
+									<div class="tab-content" id="myTabContent">
+				  <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
 					   <div class="content-dropcap v1" style="padding-top: 50px;">							
+							<div class="row">
+								
+							 <div class="col-md-9">
+								<div class="content-dropcap v1">
+									<p>Este Departamento proporcionará una visión de conjunto de la producción agroalimentaria sostenible; fundamentado en la producción agrícola, acuícola y ganadera responsable con el medio ambiente, la diversidad culinaria y la soberanía e inocuidad alimentarias cuya meta será la obtención de bienes nutritivos, saludables y de calidad organoléptica notable.
+									</p>
+								</div>								       
+                       		 </div>
+						
+										                              
 
-							Información pendiente
+                        <div class="col-md-3">
+							<div class="col-md-12 col-sm-12 mb-5">
+									<div class="media professor">
+										
+										<img src="images/about/index1/fotos/DraAlmadeLeon.jpg" alt="image" class="imagen-encabezado mb-3">
 
+										<div class="media-body">
+											<h4 class="media-heading main-color-2"><a class="main-color-2" href="#">Dra Alma Patricia de León Calderón</a></h4><br/>
+											<span style="font-weight: bold;"> Jefa del Departamento de Procesos Sociales</span><br/><br/>
+											<span><i class="fa fa-phone"></i>&nbsp;&nbsp;(728) 282-7002 ext. 4012</span><br/><span><i class="fa fa-envelope"></i>&nbsp;&nbsp;dep_ps@correo.ler.uam.mx</span><br/>											
+											<a href="#"><span><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Currículum</span></a><br/>
+											<a href="https://www.facebook.com/CSH.UAM.L/"><span><i class="fa fa-facebook"></i>&nbsp;&nbsp;https://www.facebook.com/CSH.UAM.L/</span></a>
+										</div>
+									</div>
+							  </div>
+                            <div class="sidebar">
+                                <div class="widget widget-nav-menu">
+                                    <div class=" widget-inner">
+                                        <h2 class="widget-title maincolor2">Enlaces</h2>
+                                        <div class="menu-main-navigation-container">
+											
+                                            <ul id="menu-main-navigation-1" class="menu">
+                                                <li class="menu-item">
+                                                    <a href="oferta_academica.html">Oferta Educativa</a> 													
+                                                </li>												
+												<li class="menu-item">
+													<a href="#">Identidad Divisional</a>
+												</li>										
+											</ul>											
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- sidebar -->
+                        </div><!-- /col-md-3 -->
+						</div>
 														
 					  </div>   
 					</div>
-				  <div class="tab-pane fade" id="conacyt" role="tabpanel" aria-labelledby="admision-tab">
+				  <div class="tab-pane fade" id="investigaciones" role="tabpanel" aria-labelledby="investigaciones-tab">
 					   <div class="row" style="padding-top: 50px;">
-                        <div class="col-md-12">
-							 <div class="flat-accordion">
-                                <div class="name-toggle">
-                                    <h2 class="title">Admisión y promoción de personal académico</h2>
-                                </div>
+                       		<div class="flat-accordion">                               
                                 <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='https://www.uam.mx/convoper/convoacad/index.html'">Convocatorias de Ingreso</div>
-                                    
-                                </div><!-- /toggle -->
-                               
-                                <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Requisitos_para_concurso.pdf'">Requisitos para concursos</div>                                    
-                                </div><!-- /.toggle -->
-                                <div class="flat-toggle">
-                                    <div class="toggle-title">Formatos</div>
-                                    <div class="toggle-content">
-                                        <div class="info"> 
-											<ul class="list disc">
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Evaluacion_Curricular.pdf" target="_blank">Registro Concurso de Evaluación Curricular</a></li>
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Registro_Concurso_de_Oposicion.pdf" target="_blank">Registro Concurso de Oposición</a></li>
-												<li><a href="http://www.ler.uam.mx/work/models/UAMLerma/Resource/105/3/images/Anexo_de_la_solicitud.doc" target="_blank">Anexo de la solicitud</a></li>
-											</ul>
-                                        </div>
-                                    </div>
-                                </div><!-- /.toggle -->
+                                    <div class="toggle-title">Información general</div>
+									<div class="toggle-content"><p>El Departamento de Procesos Sociales busca contribuir al estudio, análisis y discusión de las interacciones sociales, económicas y políticas, que en diferentes niveles transforman las instituciones y la vida pública.</p>
+									<p>Se destaca la necesidad de comprender la emergencia de nuevos actores sociales y de formas de organización y participación que constituyen una nueva agenda pública, diseño e implementación de las políticas, así como, diferentes e innovadoras formas de responsabilidad de las instituciones.</p>
+									<p>Es un espacio de reflexión académica donde se proponen alternativas de solución viables, en contextos complejos, a los diferentes problemas públicos y sociales.</p>
+									<p>Desde un enfoque interdisciplinario se pretende dar cuenta de la complejidad social, al estudiar y analizar los mecanismos de vinculación, interacción y ensamblaje de los procesos sociales y políticos, con diferentes perspectivas metodológicas y enfoques teóricos, que articulan las dimensiones local, regional y global.</p>
+ 									</div>
+								</div>	
+								<div class="flat-toggle">
+                                    <div class="toggle-title">Áreas de investigación</div>
+									<div class="toggle-content">
+										<section class="main-content blog-posts">
+											<div class="container">
+												<div class="row">
+													<div class="post-wrap">
+														<div class="col-md-12">
+															<div class="blog-listing">
+																<div class="blog-item">
+																	<div class="post-item blog-post-item">
+																		<div class="row">
+																			<div class="col-md-3 col-sm-12">
+																				<div class="content-pad">
+																					<div class="blog-thumbnail">
+																						<div class="item-thumbnail-gallery">
+																							<div class="item-thumbnail">
+																								 <a href="#">
+																								<img src="images/about/index1/fotos/fuse-brussels-169216.2.jpg" alt="image" style="width: 409px;">
+																								<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																								<div class="thumbnail-hoverlay-cross"></div>
+																								</a>
+																							</div>
+																						</div>            
+																					</div><!--/blog-thumbnail-->																				
+																				</div><!--/blog-thumbnail-->
+																			</div>
 
-                                <div class="flat-toggle">
-                                    <div class="toggle-title" onClick="location.href='http://www.uam.mx/academia/dictaminadoras/index.html'">Criterios de dictaminación</div>                                    
-                                </div><!-- /.toggle -->						
-                               
-                            </div><!-- /.accordion -->
-                        </div><!--/col-md-6 col-sm-6 -->
-						
-						
-					  </div>
-				  </div>			 
-					 
-				</div>
-			</div>
-			
-			 
-			 						<div class="col-md-12">
+																			<div class="col-md-9 col-sm-12">
+																				<div class="content-pad">
+																					<div class="item-content"><h3 class="title">Procesos sociales, políticos e instituciones (PSPI)</h3>
+																						<div class="item-excerpt blog-item-excerpt">
+																							<p>Breve resumen y enlace a detalle <i class="fa fa-arrow-right"></i></p>
+																						</div>																						
+																					</div>
+																				</div>
+																			</div>
+																		</div><!--/post-item-->
+																	</div>
+																</div><!-- /blog-item -->
+																<div class="blog-item">
+																	<div class="post-item blog-post-item">
+																		<div class="row">
+																			<div class="col-md-3 col-sm-12">
+																				<div class="content-pad">
+																					<div class="blog-thumbnail">
+																						<div class="item-thumbnail-gallery">
+																							<div class="item-thumbnail">
+																								 <a href="#">
+																								<img src="images/about/index1/fotos/paulo-simoes-mendes-33354.2.jpg" alt="image" style="width: 409px;">
+																								<div class="thumbnail-hoverlay main-color-1-bg"></div>
+																								<div class="thumbnail-hoverlay-cross"></div>
+																								</a>
+																							</div>
+																						</div>            
+																					</div><!--/blog-thumbnail-->																				
+																				</div><!--/blog-thumbnail-->
+																			</div>
+
+																			<div class="col-md-9 col-sm-12">
+																				<div class="content-pad">
+																					<div class="item-content"><h3 class="title">Política pública, economía, sociedad y territorio (PEST)</h3>
+																						<div class="item-excerpt blog-item-excerpt">
+																							<p>Breve resumen y enlace a detalle <i class="fa fa-arrow-right"></i></p>
+																						</div>																						
+																					</div>
+																				</div>
+																			</div>
+																		</div><!--/post-item-->
+																	</div>
+																</div><!-- /blog-item -->																
+															</div><!-- /blog-listing -->
+														</div><!-- /col-md-9 -->
+													</div>
+												</div>
+											</div>
+										</section>
+
+									</div>
+							
+								</div>
+								<div class="flat-toggle">
+                                    <div class="toggle-title">Cuerpos académicos</div>
+									<div class="toggle-content"><h6 class="title">Gobernanza, ciudadanía, participación, cohesión social y capital social</h6>
+										<p>Actualmente, la gobernanza se ha convertido en un paradigma teórico muy importante en las Ciencias Sociales. Probablemente esto es una respuesta lógica al hecho de que crecientemente en las sociedades modernas la atención a los problemas y rezagos públicos es una labor que se realiza de manera colaborativa y en la que cada vez participan más actores de la sociedad. En este proceso, la irrupción de la sociedad civil, bajo la llamada "ola asociativa global," desatada en las últimas décadas, ha jugado un papel muy importante, ensanchando los límites de la política y en general ganando un rol cada vez más preponderante en la participación como elemento de gobernabilidad democrática.</p>
+										<p>Desde una perspectiva más politológica o asociada a las políticas públicas y a la gestión pública, el concepto de gobernanza hace referencia, a una nueva forma de coordinación social y/o política. En particular, alude a una forma específica de gobierno, gestión y conducción en organizaciones, empresas, comunidades y Estados, basada en la cooperación, la reciprocidad, la corresponsabilidad y la inclusión e involucramiento de todos o una parte de los actores estratégicos.</p>
+										<p>Considerando lo anterior, esta línea se enfoca en el estudio de procesos colaborativos entre actores relevantes e interdependientes, ubicados tanto fuera como dentro del perímetro estatal, que tienen como objetivo la atención de asuntos públicos y de diversas problemáticas sociales, cada vez más profundas y complejas en sociedades y comunidades más grandes. Desde esta perspectiva esta línea de generación y aplicación del conocimiento, abona en los estudios y debates contemporáneos sobre las nuevas fisonomías del estado y su capacidad para la construcción de cohesión y capital social en las sociedades actuales.</p>
+										<p>Cabe mencionar que dentro de esta línea se consideran estudios sobre la administración colectiva de bienes comunes como son los ejidos, bosques y unidades de manejo, consejos comunitarios de administración del agua, entre otros más relacionados con la biodiversidad (o medio ambiente). Estos estudios son centrales por dos razones, primero porque la fórmula de administración social de bienes crece en el mundo y segundo porque cada vez más políticas públicas utilizan esta figura en la implementación de programas y proyectos.</p>
+										<p>Dentro de esta línea generadora de conocimientos, se pueden encontrar las siguientes áreas temáticas:</p>
+										<p>
+											<ul class="list tick">
+												<li>Gobernanza ambiental y para el desarrollo sustentable</li>
+												<li>Gobernanza comunitaria y/o local</li>
+												<li>Gobernanza como red de política</li>
+												<li>Gobernanza multinivel.</li>
+												<li>Gobernanza, democratización y poder</li>
+												<li>Gobernabilidad, gobernanza y buen gobierno</li>
+												<li>Gobernabilidad democrática para el desarrollo humano (o social)</li>
+											</ul>
+										</p>
+										<p>En general, esta área de investigación contempla análisis desde diversas disciplinas y enfoques de las ciencias sociales, entre los que se encuentran: políticas públicas, sociología, antropología, ciencia política, economía; incluyendo la utilización de métodos cuantitativos y de utilización de software especializado.</p>
+									
+										<div class="col-md-12">
                                         <div class="content-pad single-course-detail">
                                             <div class="course-detail" style="border-top: 0px;">    
                                                 <div class="content-content">		
                                                     <div class="related-course">
-                                                        <h3>Contacto</h3>
+                                                        <h3>Investigadores</h3>
                                                         <div class="cr-content">
                                                             <div class="row">
                                                                 <div class="col-md-6 col-sm-6 related-item">
                                                                    
                                                                     <div class="cr-title ">
-                                                                        <span class="related-cr-title main-color-1-hover">Dra. Mónica Francisca Benítez Dávila</span>
+                                                                        <span class="related-cr-title main-color-1-hover">Mtro. Carlos Chávez Becker</span>
                                                                     </div>
                                                                     <div class="cr-start small-text v1">													 
-																		<span style="font-weight: bold;">Directora de la División de Ciencias Sociales y Humanidades</span><br/>
-																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;(728) 282-7002 ext. 1008, 4003</span><br/>
-																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;divisioncsh@correo.ler.uam.mx</span>
+																		<span style="font-weight: bold;">Profesor-investigador</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;01(728) 282 7002 Ext. 4105</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;c.chavez@correo.ler.uam.mx</span>
 																	</div>
                                                                     <div class="clear"></div>
                                                                 </div>
@@ -402,12 +535,37 @@
                                                                  <div class="col-md-6 col-sm-6 related-item">
                                                                    
                                                                     <div class="cr-title ">
-                                                                        <span class="related-cr-title main-color-1-hover">Dr. Oscar Enrique Hernández Razo</span>
+                                                                        <span class="related-cr-title main-color-1-hover">Dr. Natal Alejandro Martínez González</span>
                                                                     </div>
                                                                     <div class="cr-start small-text v1">													 
-																		<span style="font-weight: bold;">Secretario Académico de la División de Ciencias Sociales y Humanidades</span><br/>
-																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;(728) 282-7002 ext. 1016, 4400</span><br/>
-																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;secretariacsh@correo.ler.uam.mx</span>
+																		<span style="font-weight: bold;">Profesor-investigador</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;01(728) 282 7002 Ext. 4105</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;a.martinez@correo.ler.uam.mx</span>
+																	</div>
+                                                                    <div class="clear"></div>
+                                                                </div>
+																<div class="col-md-6 col-sm-6 related-item">
+                                                                   
+                                                                    <div class="cr-title ">
+                                                                        <span class="related-cr-title main-color-1-hover">Dra. Lidia Blásquez Martínez</span>
+                                                                    </div>
+                                                                    <div class="cr-start small-text v1">													 
+																		<span style="font-weight: bold;">Profesora-investigadora</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;01(728) 282 7002 Ext. 4105</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;l.blasquez@correo.ler.uam.mx</span>
+																	</div>
+                                                                    <div class="clear"></div>
+                                                                </div>
+    
+                                                                 <div class="col-md-6 col-sm-6 related-item">
+                                                                   
+                                                                    <div class="cr-title ">
+                                                                        <span class="related-cr-title main-color-1-hover">Dra. Gabriela Martínez Tiburcio</span>
+                                                                    </div>
+                                                                    <div class="cr-start small-text v1">													 
+																		<span style="font-weight: bold;">Profesora-investigadora</span><br/>
+																		<span><i class="fa fa-phone"></i>&nbsp;&nbsp;01(728) 282 7002 Ext. 4105</span><br/>
+																		<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;g.martinez@correo.ler.uam.mx</span>
 																	</div>
                                                                     <div class="clear"></div>
                                                                 </div>
@@ -418,16 +576,187 @@
                                             </div><!--/course-detail-->
                                         </div><!--/single-content-detail-->         
                                     </div>
-		</div>
-	</div>
-</section>
+									
+									
+									
+									</div>
+								</div>
+								<div class="flat-toggle">
+                                    <div class="toggle-title">Proyectos de investigación</div>
+									<div class="toggle-content">
+										<table class="table course-list-table">
+								 		<thead class="main-color-1-bg dark-div" style="background-color: #9A4493; color: white; font-size: 1.5em;">
+												<tr>
+													<th><span style="font-size:14px;">Título del proyecto</span></th>
+													<th><span style="font-size:14px;">Fecha de aprobación</span></th>
+													<th><span style="font-size:14px;">Sesión</span></th>
+													<th><span style="font-size:14px;">Línea de investigación</span></th>
+													<th><span style="font-size:14px;">Responsable</span></th>
+													<th><span style="font-size:14px;">Fecha de inicio</span></th>
+													<th><span style="font-size:14px;">Vigencia</span></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><span style="font-size:12px;">Análisis de políticas públicas de seguridad pública en municipios mexiquenses: el caso de SUBSEMUN</span></td>
+													<td><span style="font-size:12px;">09/06/2015</span></td>
+													<td>36</td>
+													<td><span style="font-size:12px;">Políticas públicas, incidencia y cambio institucional</span></td>
+													<td><span style="font-size:12px;">Dra. Ma. Gabriela Martíneez Tiburcio</span></td>
+													<td><span style="font-size:12px;">09/06/2015</span></td>
+													<td><span style="font-size:12px;">3 años</span></td>
+												</tr>
+												<tr>
+													<td><span style="font-size:12px;">Economía regional de conocimiento; modelos y métodos de análisis y medición existentes y propuestos para México</span></td>
+													<td><span style="font-size:12px;">26/01/2015</span></td>
+													<td><span style="font-size:12px;">41</span></td>
+													<td><span style="font-size:12px;">Políticas públicas, economía, sociedad y territorio</span></td>
+													<td><span style="font-size:12px;">Dr. Ryszard E. Rozga Luter</span></td>
+													<td><span style="font-size:12px;">26/10/2015</span></td>
+													<td><span style="font-size:12px;">3 años</span></td>
+												</tr>
+												<tr>
+													<td><span style="font-size:12px;">Los comités ciudadanos en México. Un enfoque de política pública</span></td>
+													<td><span style="font-size:12px;">26/10/2015</span></td>
+													<td><span style="font-size:12px;">41</span></td>
+													<td><span style="font-size:12px;">Políticas públicas, economía, sociedad y territorio</span></td>
+													<td>Dr. Manuel Lara Caballero</td>
+													<td><span style="font-size:12px;">26/10/2015</span></td>
+													<td><span style="font-size:12px;">3 años</span></td>
+												</tr>
+												<tr>
+													<td><span style="font-size:12px;">Observatorio metropolitano de políticas públicas e incidencia (OMPPI)</span></td>
+													<td><span style="font-size:12px;">26/10/2015</span></td>
+													<td><span style="font-size:12px;">41</span></td>
+													<td>Políticas públicas, incidencia y cambio institucional</td>
+													<td>Mtro. Raúl Hernández Mar</td>
+													<td><span style="font-size:12px;">26/10/2015</span></td>
+													<td><span style="font-size:12px;">3 años</span></td>
+												</tr>
+												<tr>
+													<td><span style="font-size:12px;">Intercambio político entre organizaciones de la sociedad civil con el gobierno. Los casos del PDHDF y las OCS del Estado de México</span></td>
+													<td>04/12/2015</td>
+													<td>43</td>
+													<td>Políticas públicas, economía, sociedad y territorio</td>
+													<td>Dr. Carlos Ricardo Aguilar Astorga</td>
+													<td>04/12/2015</td>
+													<td><span style="font-size:12px;">2 años</span></td>
+												</tr>
+												<tr>
+													<td>Condiciones territoriales, cambio estructural y crecimiento económico regional y urbano de México 1988-2014</td>
+													<td>04/12/2015</td>
+													<td>43</td>
+													<td>Políticas públicas, incidencia y cambio institucional</td>
+													<td>Mtra. Mónica Adriana Sosa</td>
+													<td>04/12/2015</td>
+													<td>3 años</td>
+												</tr>
+												<tr>
+													<td><span style="font-size:12px;">Género, ciencia y educación: de los actores a ls políticas &acute;públicas</span></td>
+													<td>26/01/2016</td>
+													<td>44</td>
+													<td>Actores y desigualdades en la sociedad. Género, derechos humanos y educación superior</td>
+													<td>Dra. Eva Raquel G&uuml;erreca Torres</td>
+													<td>26/01/2016</td>
+													<td>3 años</td>
+												</tr>
+												<tr>
+													<td>La articulacipon territorial y la institucionalización del turismo rural en le Estado de México</td>
+													<td>02/03/2016</td>
+													<td>45</td>
+													<td>Políticas públicas, incidencia y cambio institucional.&nbsp; Procesos socioeconómicos y territorio</td>
+													<td>Dr. Ingnacio López Moreno</td>
+													<td>02/03/2016</td>
+													<td>3 años</td>
+												</tr>
+												<tr>
+													<td>Desarrollo económico-educación-distribución de la riqueza en México 1980-2015</td>
+													<td>06/04/2016</td>
+													<td>46</td>
+													<td>Políticas públicas, economía, sociedad y territorio</td>
+													<td>Mtra. Marivel Dávila Jaime</td>
+													<td>06/04/2016</td>
+													<td>3 años</td>
+												</tr>
+												<tr>
+													<td>El modelo de bote de basura en las decisiones de la Organización Mundial de la Salud: un proceso estratégico para lidiar con la ambig&uuml;edad</td>
+													<td><span style="font-size:12px;">06/04/2016</span></td>
+													<td>46</td>
+													<td>Políticas públicas, economía, sociedad y territorio</td>
+													<td><span style="font-size:12px;">Dra. Alma Patricia de León Calderón</span></td>
+													<td>06/04/2016</td>
+													<td>2 años</td>
+												</tr>
+												<tr>
+													<td>Gestión sustentable de ecosistemas e innovación social</td>
+													<td><span style="font-size:12px;">06/04/2016</span></td>
+													<td><span style="font-size:12px;">46</span></td>
+													<td>Procesos sociales, cambio e innovación social / Gobernanza, ciudadanía, participación, cohesión social y capital social</td>
+													<td>Dra. Lidia Ivonne Blásquez Martínez</td>
+													<td><span style="font-size:12px;">21/10/2016</span></td>
+													<td><span style="font-size:12px;">2 años</span></td>
+												</tr>
+												<tr>
+													<td>La contraloría social como instrumento de la rendición de cuentas en la administración pública estatal</td>
+													<td>21/10/2016</td>
+													<td>55</td>
+													<td>Procesos sociales, cambio e innovación social</td>
+													<td>Dra. Ma. Gabriela Martínez Tiburcio</td>
+													<td>21/10/2016</td>
+													<td>1 año</td>
+												</tr>
+												<tr>
+													<td>Estructura urbana, movilidad cotidiana y desigualdad: ¿el aislamiento espacial como factor de exclusión social?</td>
+													<td><span style="font-size:12px;">21/10/2016</span></td>
+													<td>55</td>
+													<td>Políticas públicas, economía, sociedad y territorio</td>
+													<td>Dra. Ruth Pérez López</td>
+													<td>21/10/2016</td>
+													<td>1 año</td>
+												</tr>
+												<tr>
+													<td>El análisis espacial en la formulación, implementación y evaluación de políticas públicas para la disminución de desigualdades sociales.</td>
+													<td><span style="font-size:12px;">21/10/2016</span></td>
+													<td>55</td>
+													<td>Políticas públicas, economía, sociedad y territorio</td>
+													<td>Dra. Sofía García Yag&uuml;e</td>
+													<td>21/10/2016</td>
+													<td>1 año</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="flat-toggle">
+                                    <div class="toggle-title" onClick="location.href='directorio_investigadores_rt.html'">Directorio de investigadores</div>
+									
+								</div>
+							</div>			
+
+						
+					  </div>
+				  </div>			 
+					 
+				</div>
+								</div>
+						
+                       
+                    		</div>
+						</div>
+					</section>
+                </div>
+            </div>
+        </section>
+	
+		
 
         <footer class="footer full-color">
-           
-		 <section id="bottom">
+            <section id="bottom">
                 <div class="section-inner">
                     <div class="container">
                         <div class="row normal-sidebar">
+							
+							
 						<div class="widget widget-text">
                                 <div class="row">
                                     <div class="col-md-2">
@@ -612,6 +941,7 @@
         </footer>
 
         <!-- Javascript -->
+       
         <script type="text/javascript" src="javascript/jquery.min.js"></script>
         <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.easing.js"></script>
@@ -626,62 +956,43 @@
         
         <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
         <script type="text/javascript" src="javascript/main.js"></script>
-		<script>
-			function sortTable(n, idTabla) {
-			  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-			  table = document.getElementById(idTabla);
-			  switching = true;
-			  //Set the sorting direction to ascending:
-			  dir = "asc"; 
-			  /*Make a loop that will continue until
-			  no switching has been done:*/
-			  while (switching) {
-				//start by saying: no switching is done:
-				switching = false;
-				rows = table.rows;
-				/*Loop through all table rows (except the
-				first, which contains table headers):*/
-				for (i = 1; i < (rows.length - 1); i++) {
-				  //start by saying there should be no switching:
-				  shouldSwitch = false;
-				  /*Get the two elements you want to compare,
-				  one from current row and one from the next:*/
-				  x = rows[i].getElementsByTagName("TD")[n];
-				  y = rows[i + 1].getElementsByTagName("TD")[n];
-				  /*check if the two rows should switch place,
-				  based on the direction, asc or desc:*/
-				  if (dir == "asc") {
-					if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-					  //if so, mark as a switch and break the loop:
-					  shouldSwitch= true;
-					  break;
-					}
-				  } else if (dir == "desc") {
-					if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-					  //if so, mark as a switch and break the loop:
-					  shouldSwitch = true;
-					  break;
-					}
-				  }
-				}
-				if (shouldSwitch) {
-				  /*If a switch has been marked, make the switch
-				  and mark that a switch has been done:*/
-				  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-				  switching = true;
-				  //Each time a switch is done, increase this count by 1:
-				  switchcount ++;      
-				} else {
-				  /*If no switching has been done AND the direction is "asc",
-				  set the direction to "desc" and run the while loop again.*/
-				  if (switchcount == 0 && dir == "asc") {
-					dir = "desc";
-					switching = true;
-				  }
-				}
-			  }
-			}
-			</script>
+       <script type="text/javascript">
+		   document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  // close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {	
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+// DOMContentLoaded  end
+       </script>
+
     </div>
 </body>
 </html>
