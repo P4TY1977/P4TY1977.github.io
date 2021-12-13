@@ -3157,6 +3157,8 @@ body.mac .dropcap {
 	 margin-right: 10px;
   
 }
+
+
 		.list.none, .list.block, .list.tick, .list.arrow, .list.tagcloud, .list.underline {
     list-style-type: none;
 }
@@ -3180,7 +3182,18 @@ body.mac .dropcap {
 		.list.disc {
 			list-style-type: disc;
 		}
+
+.title-section{
+	color: #555;
+	font-size: 1.5em;
+	padding: 15px 10px;
+	text-align: left;
+}
 		
+.section{
+	border-top: 1px solid #d3d3d3;
+	padding-top: 5px;	
+}
 /* .page-title .overlay {
     position: absolute;
     left: 0;
