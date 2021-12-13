@@ -3194,6 +3194,13 @@ body.mac .dropcap {
 	border-top: 1px solid #d3d3d3;
 	padding-top: 5px;	
 }
+.activa {
+	color: blue !important;
+}
+
+.activa:hover {
+	color: white !important;
+}
 /* .page-title .overlay {
     position: absolute;
     left: 0;
