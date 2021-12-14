@@ -3201,6 +3201,12 @@ body.mac .dropcap {
 .activa:hover {
 	color: white !important;
 }
+.soyUAM{
+	background-image: url('../images/about/index1/logos/Wall_SoyUAM_122.png'); 
+	background-repeat: repeat-y; 
+	background-position: right;
+}
+
 /* .page-title .overlay {
     position: absolute;
     left: 0;
