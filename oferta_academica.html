@@ -856,27 +856,5 @@
         <script type="text/javascript" src="javascript/main.js"></script>  
     </div>
 </body>
-	<script type="text/javascript">
-		var originales=document.getElementsByClassName("exerpt-text");
-		var textos_originales= new Array();
-		
-		for(i=0;i<originales.length;i++)
-			{textos_originales[i]=originales[i].innerHTML;
-			 originales[i].innerHTML=textos_originales[i].substring(0,90)+"...<br/><a href='javascript:verMas("+i+")' style='color: blue;'>ver más</a>"}
-		function verMas(elemento)
-		{
-		   originales[elemento].innerHTML=textos_originales[elemento]+"<br/><a href='javascript:verMenos("+elemento+")' style='color: blue;'>ver menos</a>"	
-			
-		}
-		function verMenos(elemento)
-		{
-		   originales[elemento].innerHTML=textos_originales[elemento].substring(0,90)+"...<br/><a href='javascript:verMas("+elemento+")' style='color: blue;'>ver más</a>"	
-			
-		}
-	</script>
-	<!-- No funciona bien el ver más y ver menos porque los elementos no se desplazan a menos que se cambie de tamaño la ventana  
-          align-items-stretch no funciona para que todos los items tengan el mismo tamaño
-         y parece que se salen del flujo normal los items el del sensor de molinete debería está en la primer posición de la segunda fila
--->
 	 
 </html>
