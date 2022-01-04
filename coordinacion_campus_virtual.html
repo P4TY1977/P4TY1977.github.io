@@ -48,14 +48,7 @@
 			line-height: 1.2em;
 			color: #253b80;
 		}
-		.sidebar .widget.widget-nav-menu2 ul li a:before {    
-			content: none;
-		}
-		
-		.widget-nav-menu2 .widget-inner ul li a {    
-			cursor: default;
-		}
-		
+				
 		.related-course .cr-content .cr-title span, .titular {
 				font-family: 'Open Sans', sans-serif;
 				font-size: 17px;
@@ -66,6 +59,20 @@
 			{
 				text-transform: none;
 			}		
+	</style>
+	<style type="text/css">
+		.dropdown-menu.personal{
+			background-color: rgba(0,0,0,0.50) !important;
+		}
+		.dropdown-item.personal{
+			color:#fff !important;
+		}
+		.dropdown-item.personal:hover, .dropdown-item.personal:focus{
+			color: #000 !important;
+		}
+		
+		.item-post{padding-bottom: 30px;}
+		
 	</style>
 	
 	<style type="text/css">
@@ -257,6 +264,9 @@
 						<button class="nav-link" id="cursosDocentes-tab" data-bs-toggle="tab" data-bs-target="#cursosDocentes" type="button" role="tab" aria-controls="cursosDocentes" aria-selected="false">Cursos Docentes</button>
 					  </li>
 					   <li class="nav-item" role="presentation">
+						<button class="nav-link" id="servicios-tab" data-bs-toggle="tab" data-bs-target="#servicios" type="button" role="tab" aria-controls="servicios" aria-selected="false">Servicios</button>
+					  </li>
+					   <li class="nav-item" role="presentation">
 						<button class="nav-link" id="infografias-tab" data-bs-toggle="tab" data-bs-target="#infografias" type="button" role="tab" aria-controls="infografias" aria-selected="false">Infografías</button>
 					  </li>					  
 					</ul>
@@ -365,6 +375,25 @@
 							<div class="sidebar">
 								
 								<div class="widget widget-nav-menu widget-nav-menu2">
+									<div class="flat-accordion">										
+										<div class="flat-toggle">
+											<div class="toggle-title" style="font-size: 20px;">¿Quieres hacer el servicio social con nosotros?</div>
+											<div class="toggle-content">
+												<table class="table course-list-table">                                       
+													 <tbody>
+														<tr><td>Diseño y producción de vídeos</td></tr>
+														<tr><td>Diseño e implementación de vídeos educativos</td></tr>
+														<tr><td>Desarrollo y documentación de sistemas</td></tr>
+														<tr><td>Gamificación y videojuegos educativos</td></tr>
+														<tr><td>Creación de objetos digitales de aprendizaje</td></tr>
+														<tr><td>Creación de cápsulas de conocimiento</td></tr>
+														<tr><td>Área de investigación</td></tr>
+													</tbody>
+												</table>										
+												                            
+											</div>
+									</div><!-- /toggle -->
+									</div>
                                     <div class=" widget-inner">
                                         <h2 class="widget-title maincolor2">¿Quieres hacer el servicio social con nosotros?</h2>
                                         <div class="menu-main-navigation-container">
@@ -809,6 +838,145 @@
 							  </div>
 							</div>
 					</div>
+					
+<!-- SECCIÓN DE SERVICIOS-->				
+				  <div class="tab-pane fade" id="servicios" role="tabpanel" aria-labelledby="servicios-tab">
+					  <div class="row" style="padding-top: 50px;">
+							<div class="row">
+							<div class="col-md-4">
+                                <div class="item-post">
+                                    <div class="content-box">
+                                        <img src="images/about/index1/ccv/nadu.jpg" alt="image" id="imgNadu" width="100%">
+                                    </div>
+									<div class="btn-group dropup d-grid gap-2">
+										
+									  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+										Nadu
+									  </button>		
+									  <ul class="dropdown-menu personal w-100">										  
+										  <li><a class="dropdown-item personal" href="#">Historia</a></li>
+										  <li><a class="dropdown-item personal" href="#">Logo</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Aplicaciones</a></li>
+										  <li class="nav-item dropdown disabled" style="font-weight: bolder; color:rgba(219,219,219,1.00)">MANUALES</li>
+										  <li><a class="dropdown-item personal" href="#">Manuales técnicos</a></li>
+										  <li><a class="dropdown-item personal" href="#">Infografías</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video tutoriales</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Acceso al sistema</a></li>
+									  </ul>
+									</div>                                   
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="item-post">
+                                    <div class="content-box">
+                                        <img src="images/about/index1/ccv/XhaniCuadro2.jpg" alt="image" id="imgXhani">
+                                    </div>
+									<div class="btn-group dropup d-grid gap-2">
+										
+									  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+										Xhani
+									  </button>		
+									  <ul class="dropdown-menu personal w-100">										  
+										  <li><a class="dropdown-item personal" href="#">Historia</a></li>
+										  <li><a class="dropdown-item personal" href="#">Logo</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Aplicaciones</a></li>
+										  <li class="nav-item dropdown disabled" style="font-weight: bolder; color:rgba(219,219,219,1.00)">MANUALES</li>
+										  <li><a class="dropdown-item personal" href="#">Manuales técnicos</a></li>
+										  <li><a class="dropdown-item personal" href="#">Infografías</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video tutoriales</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Acceso al sistema</a></li>
+									  </ul>
+									</div>                                   
+                                </div>
+                            </div>
+							<div class="col-md-4">
+                                <div class="item-post">
+                                    <div class="content-box">
+                                        <img src="images/about/index1/ccv/nadu.jpg" alt="image" id="imgPadi" width="100%">
+                                    </div>
+									<div class="btn-group dropup d-grid gap-2">
+										
+									  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+										Padi
+									  </button>		
+									  <ul class="dropdown-menu personal w-100">										  
+										  <li><a class="dropdown-item personal" href="#">Historia</a></li>
+										  <li><a class="dropdown-item personal" href="#">Logo</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Aplicaciones</a></li>
+										  <li class="nav-item dropdown disabled" style="font-weight: bolder; color:rgba(219,219,219,1.00)">MANUALES</li>
+										  <li><a class="dropdown-item personal" href="#">Manuales técnicos</a></li>
+										  <li><a class="dropdown-item personal" href="#">Infografías</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video tutoriales</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Acceso al sistema</a></li>
+									  </ul>
+									</div>                                   
+                                </div>
+                            </div>
+							<div class="col-md-4">
+                                <div class="item-post">
+                                    <div class="content-box">
+                                        <img src="images/about/index1/ccv/nadu.jpg" alt="image" id="imgXogi" width="100%">
+                                    </div>
+									<div class="btn-group dropup d-grid gap-2">
+										
+									  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+										Xogi
+									  </button>		
+									  <ul class="dropdown-menu personal w-100">										  
+										  <li><a class="dropdown-item personal" href="#">Historia</a></li>
+										  <li><a class="dropdown-item personal" href="#">Logo</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Aplicaciones</a></li>
+										  <li class="nav-item dropdown disabled" style="font-weight: bolder; color:rgba(219,219,219,1.00)">MANUALES</li>
+										  <li><a class="dropdown-item personal" href="#">Manuales técnicos</a></li>
+										  <li><a class="dropdown-item personal" href="#">Infografías</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video tutoriales</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Acceso al sistema</a></li>
+									  </ul>
+									</div>                                   
+                                </div>
+                            </div>
+							<div class="col-md-4">
+                                <div class="item-post">
+                                    <div class="content-box">
+                                        <img src="images/about/index1/ccv/kuhni.jpg" alt="image" id="imgkhuni" width="100%">
+                                    </div>
+									<div class="btn-group dropup d-grid gap-2">
+										
+									  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,0">
+										Khuni
+									  </button>		
+									  <ul class="dropdown-menu personal w-100">										  
+										  <li><a class="dropdown-item personal" href="#">Historia</a></li>
+										  <li><a class="dropdown-item personal" href="#">Logo</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Aplicaciones</a></li>
+										  <li class="nav-item dropdown disabled" style="font-weight: bolder; color:rgba(219,219,219,1.00)">MANUALES</li>
+										  <li><a class="dropdown-item personal" href="#">Manuales técnicos</a></li>
+										  <li><a class="dropdown-item personal" href="#">Infografías</a></li>
+										  <li><a class="dropdown-item personal" href="#">Video tutoriales</a></li>
+										  <li><hr class="dropdown-divider" style="opacity: 0.75; color:rgba(219,219,219,1.00);"></li>
+										  <li><a class="dropdown-item personal" href="#">Acceso al sistema</a></li>
+									  </ul>
+									</div>                                   
+                                </div>
+                            </div>
+                        
+                        </div>
+						</div>
+					</div>					
 <!-- SECCIÓN DE INFOGRAFÍAS -->					
 					 <div class="tab-pane fade" id="infografias" role="tabpanel" aria-labelledby="infografias-tab">
 						 <div class="row" style="padding-top: 50px;">
@@ -1440,9 +1608,9 @@
         </footer>
 
         <!-- Javascript -->
-        <script type="text/javascript" src="javascript/jquery.min.js"></script>
-	  
-        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+        <!--script type="text/javascript" src="javascript/bootstrap.min.js"></script-->
+		 <script type="text/javascript" src="javascript/bootstrap.bundle.js"></script>
         <script type="text/javascript" src="javascript/jquery.easing.js"></script>
         
         <script type="text/javascript" src="javascript/owl.carousel.js"></script>
