@@ -2652,7 +2652,7 @@ body.mobile .event-item:hover .event-thumbnail img {
 .course-list-table .courses-list table > thead > tr > th {
     border-bottom: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 200;
     vertical-align: middle;
 } 
