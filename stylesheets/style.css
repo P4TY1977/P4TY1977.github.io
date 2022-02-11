@@ -458,6 +458,8 @@
     color: rgba(255,255,255,.75);
 }
 
+.textwidget{overflow-wrap: break-word; }
+
 .navbar-right.topnav-sidebar > ul > li:hover i,
 .search-toggle:hover i {
 	color: #fff;
@@ -3232,3 +3234,7 @@ font-weight: 400;
     filter: alpha(opacity=70);
 } */
 
+.courses-list::-webkit-scrollbar { 
+  /* solo oculta su visualizacion */
+  display: none;
+}

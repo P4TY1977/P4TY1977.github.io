@@ -51,6 +51,7 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
+	<script type="text/javascript" src="javascript/directorioRectoria.js"></script>
 
 </head>
 
@@ -254,14 +255,14 @@
                                                             <div class="media professor">
                                                                 <div class="pull-left v1">
                                                                     <a href="#" class="main-color-2">
-                                                                        <img src="images/about/index1/4.jpg" alt="image" class="imagen-encabezado">
+                                                                        <img src="images/about/index1/4.jpg" alt="image" class="imagen-encabezado" id="fotoRector">
                                                                     </a>
                                                                 </div>
                                                                 <div class="media-body">
-                                                                    <h4 class="media-heading main-color-2"><a class="main-color-2" href="#">Dr. José Mariano García Garibay</a></h4><br/>
-																	<span style="font-weight: bold;">Rector de Unidad</span><br/><br/>
-																	<span><i class="fa fa-phone"></i>&nbsp;&nbsp;+01 (728) 282 7002 Ext. 1001</span><br/>
-																	<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;rectoria@correo.ler.uam.mx</span>
+                                                                    <h4 class="media-heading main-color-2"><a class="main-color-2" href="#" id="nombreRector"></a></h4><br/>
+																	<span style="font-weight: bold;" id="cargoRector"></span><br/><br/>
+																	<span id="telefonoRector"><i class="fa fa-phone"></i>&nbsp;&nbsp;</span><br/>
+																	<span id="emailRector"><i class="fa fa-envelope"></i>&nbsp;&nbsp;</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -672,6 +673,22 @@
         
         <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
         <script type="text/javascript" src="javascript/main.js"></script>
+	    <script type="text/javascript">
+			//directorioRectoria está en javascript/directorioRectoria.js
+			for (var i = 0; i < directorioRectoria.length; i++) {
+				if(directorioRectoria[i].cargo.indexOf("Rector")!=-1)
+				{
+					document.getElementById("fotoRector").src=directorioRectoria[i].foto;
+					document.getElementById("nombreRector").innerHTML+=directorioRectoria[i].nombre;
+					document.getElementById("cargoRector").innerHTML+=directorioRectoria[i].cargo;
+					document.getElementById("telefonoRector").innerHTML+=directorioRectoria[i].telefono;
+					document.getElementById("emailRector").innerHTML+=directorioRectoria[i].email;
+					break;
+				}
+            }
+			 
+	    </script>
+	
     </div>
 </body>
 </html>
