@@ -3152,6 +3152,9 @@ body.mac .dropcap {
 .iconoUam {
 			height: 50px !important; 
 			border-radius: 0px 10px;
+	        border-color: white;
+			border: 1px;
+			border-style: solid;
 			width: 50px !important;
 		}	
 .list.tick > li:before {
